@@ -1,0 +1,257 @@
+/*-------------------------------------*/
+p#cf7_controls {
+  text-align:center;
+
+}
+#cf7_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#cf7 {
+  position:relative;
+  height:427px;
+  width:700px;
+  margin:0 auto 10px;
+
+}
+#cf7 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#cf7 img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+/*-------------------------------------*/
+.verticaltabsimages {
+}
+
+.carsmenuli {
+  margin-right: 30px;
+}
+
+.logoimg{
+  margin-bottom: -15px;
+}
+
+.featureimg{
+  margin-bottom: 10px;
+}
+
+.buttonimg{
+  margin-bottom: 2px;
+}
+
+.featurebtn{
+  border-color: #5D6A76 !important;
+}
+
+.popover-div{
+  float:left;
+  margin-right: 1%;
+  padding-left:10px;
+  color: white;
+}
+
+.big-icon {
+  font-size: 20px;
+}
+
+.popover-icons{
+  padding:10px;
+  color: white;
+  border-right: solid 2px #F1A95C;
+}
+.popover-btn1{
+  position: absolute;
+  right: 5%;
+  bottom: 120px;
+  width: 200px;
+
+
+}
+.popover-btn2{
+  position: absolute;
+  right: 5%;
+  bottom: 80px;
+  width: 200px;
+
+}
+.popover-btn3{
+  position: absolute;
+  right: 5%;
+  bottom: 40px;
+  width: 200px;
+
+}
+
+.imgshadow{
+  -webkit-box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+  -moz-box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+  box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+}
+
+.actionimg{
+  -webkit-box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+  -moz-box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+  box-shadow: 5px 6px 8px -3px rgba(0,0,0,0.47);
+
+}
+
+.popover-div-border{
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.popover-div-size{
+  position: absolute;
+  left: 5%;
+  bottom: 40px;
+  width: 70%;
+}
+
+.usermail_error{
+
+  color: red;
+  display: none;
+  padding-bottom: 10px;
+}
+
+.maildeletestatus{
+  text-align: center;
+  padding: 10px;
+  color: rgb(241, 169, 92);
+  background-color: rgb(93, 106, 118);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.modalmargin{
+  margin-top: 20px;
+}
+
+.caperr_callback{
+  color: rgb(255, 250, 250);
+  display: none;
+  background-color: rgba(255, 0, 0, 0.80);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.caperr_service{
+  color: rgb(255, 250, 250);
+  display: none;
+  background-color: rgba(255, 0, 0, 0.80);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.caperr_testdrive{
+  color: rgb(255, 250, 250);
+  display: none;
+  background-color: rgba(255, 0, 0, 0.80);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.caperr_credit{
+  color: rgb(255, 250, 250);
+  display: none;
+  background-color: rgba(255, 0, 0, 0.80);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.capctha{
+  margin-bottom: 5px;
+}
+
+.maincl{
+  color:#F1A95C;
+}
+
+.herounitbg{
+  background-color: rgba(0,0,0,0.31);
+  padding: 15px;
+}
+
+.carinfo{
+  text-align: justify;
+  font-size: 16px;
+}
+
+.carinfoimg{
+  width: 100%;
+  height: 100%;
+}
+
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+
+.toupp{
+  text-transform: uppercase;
+}
+
+.pwin{
+  text-indent: 30px;
+  text-align: justify;
+}
+.pwoin{
+  text-align: justify;
+}
+
+.thead1{
+  text-align: center;
+  background-color: #5D6A76;
+  color: #fff;
+}
+
+.thead2{
+  text-align: center;
+  background-color: #F1A95C;
+  color: #000;
+}
+
+.pagesimg{
+  display : block;
+  margin : auto;
+  width: 800px;
+}
+.pagesimg1{
+  display : block;
+  margin : auto;
+  width: 500px;
+}
+.pagesimg2{
+  display : block;
+  margin : auto;
+  width: 100%;
+}
+
+.main-color{
+  color:#F1A95C;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.metrika{
+  display: none;
+}

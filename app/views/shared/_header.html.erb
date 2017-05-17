@@ -1,0 +1,95 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrinkable">
+  <!-- TOP BAR -->
+  <div class="nav-topbar clearfix ">
+    <div class="container">
+      <div class="left">
+        <ul class="list-inline social-icons social-icons-small social-icons-fullrounded">
+          <li><a href="https://vk.com/avtostar_kmv" class="behance-bg-hover"><i class="fa fa-vk"></i></a></li>
+          <li><a href="https://www.facebook.com/groups/1697564047227695/" class="facebook-bg-hover"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://ok.ru/group/53057574469777" class="soundcloud-bg-hover"><i class="fa fa-odnoklassniki"></i></a></li>
+          <!--    <li><a href="#" class="google-plus-bg-hover"><i class="fa fa-google-plus"></i></a></li>-->
+              <li><a href="#" class="instagram-bg-hover"><i class="fa fa-instagram"></i></a></li>
+              <!--  <li><a href="#" class="youtube-bg-hover"><i class="fa fa-youtube"></i></a></li>-->
+
+              </ul>
+            </div>
+            <div class="right">
+
+              <ul class="nav navbar-nav navbar-right" style="margin-top: -1px;">
+                <li><a href="#"><b>Автосервис: +7 (8793) 32-12-15</b></a></li>
+                <li><a href="#"><b>Автосалон: +7 (8793) 32-12-03</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END TOP BAR -->
+  <div class="container">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+      <span class="sr-only">Toggle Navigation</span>
+      <i class="fa fa-bars"></i>
+    </button>
+    <a href="/" class="navbar-brand" >
+      <%= image_tag(image_path('logo.png'),class:'logoimg') %>
+    </a>
+    <ul class="nav navbar-nav secondary-navbar-nav" >
+
+    </ul>
+    <div id="main-nav-collapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav main-navbar-nav">
+        <li class="dropdown <%= current_class?(root_path)%>">
+          <%= link_to '', root_path,  :class=>'fa fa-home' %>
+        </li>
+
+
+
+        <li class="dropdown dropdown-mega <%= @uslugigroup %>">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown">УСЛУГИ</a>
+          <ul class="dropdown-menu" style="width: 800px; left: 25% !important;">
+            <li class="dropdown-mega-menu-container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <ul class="list-unstyled menu-list">
+                    <li><span>АВТОСЕРВИС</span></li>
+
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="list-unstyled menu-list">
+                    <li><span>АВТОСАЛОН</span></li>
+                    <li ><a href="/avtosalon#avtocredit">АВТОКРЕДИТ</a></li>
+                    <li ><a href="/avtosalon#testdrive">ТЕСТ-ДРАЙВ</a></li></li>
+                    <li><a href="/avtosalon#avtorinok">ПРОДАЖА Б\У АВТОМОБИЛЕЙ</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="list-unstyled menu-list">
+                    <li><span>ПРОЧИЕ УСЛУГИ</span></li>
+                    <li ><a href="/otherservice#techo_smotr">ТЕХНИЧЕСКИЙ ОСМОТР</a></li>
+                    <li><a href="/otherservice#nezavisimay_ocenka">НЕЗАВИСИМАЯ ОЦЕНКА</a></li>
+                    <li><a href="/otherservice#avto_strahovanie">АВТОСТРАХОВАНИЕ</a></li>
+                    <li><a href="/otherservice#avto_atele">АВТОАТЕЛЬЕ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown <%= @shopgroup %>">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">НАШИ МАГАЗИНЫ</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/shops#vaz">Автозапчасти ВАЗ</a></li>
+            <li><a href="/shops#inomarki">Автозапчасти для иномарок</a></li>
+            <li><a href="/shops#avtodj">Магазин автоэлектроники AvtoDJ</a></li>
+
+
+          </ul>
+        </li>
+        <li class="dropdown ">
+
+        </li>
+
+      </ul>
+    </div>
+    <!-- END MAIN NAVIGATION -->
+  </div>
+</nav>

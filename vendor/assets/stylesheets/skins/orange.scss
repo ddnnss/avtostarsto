@@ -1,0 +1,15 @@
+/* Skin: orange */
+
+@import 'mixins/module';
+
+$brand-primary: #F1A95C;
+$link-hover-color: darken($brand-primary, 8%);
+$navbar-default-link-active-color: $brand-primary;
+
+$btn-primary-color: #FFF;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: darken($btn-primary-bg, 5%);
+
+$cta-bg: #5D6A76;
+
+@import "skin-styles";

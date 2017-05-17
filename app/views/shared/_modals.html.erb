@@ -1,0 +1,539 @@
+<!--modal form-mailsubscribe start -->
+<div style="display: none;" id="mailmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p style="text-align: justify;">Ваш e-mail адрес включен в рассылку. Все инструкции как отменить подписку Вы найдете в письме.</p>
+        <p>Спасибо.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check-circle"></i> ПРОДОЛЖИТЬ</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal form-mailsubscribe end -->
+<%  @n1 =  rand(10)%>
+<%  @n2 =  rand(10)%>
+<!--modal form-callback start -->
+<div id="modalcallback" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="caperr_callback">ffff</div>
+        <h4 class="heading-border-bottom-short border-primary modal-title" id="myModalLabel">Форма заказа обратного звонка</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for Uzer.new , remote: true  do |f|%>
+            <div class="form-group">
+              <div class="">
+
+                <%= f.text_field 'fio', placeholder:'Представьтесь, пожалуйста' , :required => true, class:'form-control'%>
+
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'phone', placeholder:'Ваш телефон для звонка оператора' , :required => true, class:'form-control', :data => {:mask=> '+7 (999) 999-99-99'}%>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <%= select_tag 'calltime',
+                               '<option>c 8 до 10</option>
+                               <option>c 10 до 12</option>
+                               <option>c 13 до 15</option>
+                               <option>c 15 до 17</option>
+                               <option>c 17 до 19</option>' ,
+                               :include_blank => 'Удобное время для звонка',
+                               :required => true,
+                               class:'form-control'
+                %>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <%= f.text_area 'addtext', placeholder:'Ваш вопрос, если он есть', cols: 40, rows: 5, class:'form-control' %>
+              </div>
+            </div>
+            <div class="form-group ">
+
+              <div class="col-sm-6 modalmargin">
+                <%= image_tag(image_path('capthca/'+@n1.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/plus.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/'+@n2.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/eqal.png'), class: 'capctha',alt:'')%>
+                <input class="" id="capinput_callback" name="n3" required="required" placeholder="Ответ" type="number">
+              </div>
+
+              <div class="col-sm-3 modalmargin">
+                <%= f.submit 'ОТПРАВИТЬ' , id: 'callbacksub',class:'btn btn-primary form-control'%>
+              </div>
+              <div class="col-sm-3 modalmargin" align="right">
+                <%= f.submit 'ЗАКРЫТЬ' , class:'btn btn-default form-control',id: 'callbackclose' , :data => {:dismiss => 'modal'}%>
+              </div>
+            </div>
+            <input id="nn1" name="n1" value="<%= @n1%>" type="hidden" />
+            <input id="nn2" name="n2" value="<%= @n2%>" type="hidden" />
+            <input id="nn3" name="ft" value="1" type="hidden" />
+        <% end %>
+      </div>
+      <div class="modalmargin">
+        <p style="margin-left: 25px; color:red; font-size: 10px;text-align: center;">Отправляя форму, Вы соглашаетесь на обработку персональных данных.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal form-callback end -->
+<!--modal form-avtoservice start -->
+<%  @n3 =  rand(10)%>
+<%  @n4 =  rand(10)%>
+<% i=0 %>
+<% @arr= Array.new %>
+<%  @daynum = Date.new(Time.now.year,Time.now.month,Time.now.day).wday.to_i %>
+<%  def dayweek  (cuday) %>
+    <%  case cuday %>
+<%  when 0 %>
+        <%  dw = 'Воскресенье'%>
+    <%  when 1 %>
+        <%  dw = 'Понедельник'%>
+    <%  when 2 %>
+        <%  dw = 'Вторник'%>
+    <%  when 3 %>
+        <%  dw = 'Среда'%>
+    <%  when 4 %>
+        <%  dw = 'Четверг'%>
+    <%  when 5 %>
+        <%  dw = 'Пятница'%>
+    <%  when 6 %>
+        <%  dw = 'Суббота'%>
+    <%  end %>
+<%  end %>
+<%  for i in @daynum..13 %>
+    <% curday = Date.new(Time.now.year,Time.now.month,Time.now.day).prev_day  %>
+
+    <%  ii= curday.next+i%>
+    <%  dd= ii.strftime("%d/%m/%Y") %>
+    <% @arr << dayweek(ii.wday).to_s + ' - '+dd.to_s %>
+
+<% end %>
+<div id="modalavtoservice" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="caperr_service">ffff</div>
+        <h4 class="heading-border-bottom-short border-primary modal-title" id="myModalLabel">Форма заявки на техобслуживание</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for Uzer.new , remote: true  do |f|%>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'fio', placeholder:'Представьтесь, пожалуйста' , :required => true, class:'form-control'%>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'phone', placeholder:'Ваш телефон для звонка оператора' , :required => true, class:'form-control', :data => {:mask=> '+7 (999) 999-99-99'}%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'calltime',
+                                 '<option>c 8 до 10</option>
+                                 <option>c 10 до 12</option>
+                                 <option>c 13 до 15</option>
+                                 <option>c 15 до 17</option>
+                                 <option>c 17 до 19</option>' ,
+                                 :include_blank => 'Удобное время для звонка',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'preferday', options_for_select(@arr.collect{ |u| [u] }),
+                                 :prompt => 'Желаемая дата',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'prefercar',
+                                 ' <option>LADA VESTA</option>
+                                   <option>LADA GRANTA</option>
+                                   <option>LADA XRAY</option>
+                                   <option>LADA PRIORA</option>
+                                   <option>LADA LARGUS</option>
+                                   <option>LADA KALINA</option>
+                                   <option>LADA 4x4</option>
+                                   <option>LADA КЛАССИКА</option>
+                                   <option>Другая (укажу в комментарии)</option>',
+                                 :include_blank => 'Модель Вашего автомобиля',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'preferservice',
+                                 '  <option>Технический осмотр</option>
+                                    <option>Антикоррозийная обработка</option>
+                                    <option>Кузовные и малярные работы</option>
+                                    <option>Компьютерная диагностика</option>
+                                    <option>Монтаж, компьютерная балансировка, ремонт литых дисков</option>
+                                    <option>Автомойка</option>
+                                    <option>Проточка тормозных дисков</option>
+                                    <option>Ремонт КПП автомобилей ВАЗ</option>
+                                    <option>Ремонт АКПП</option>
+                                    <option>Техническое обслуживание и ремонт двигателей</option>
+                                    <option>Диагностика и ремонт электрооборудования и топливной системы автомобилей ВАЗ</option>
+                                    <option>Ремонт ходовой части и электрооборудования автомобилей иностранного производства</option>
+                                    <option>Компьютерный развал-схождение всех марок автомобилей</option>
+                                    <option>Обшивка салона иномарок</option>
+                                    <option>Другое (указывается в дополнительной информации)</option>',
+                                 :prompt => 'Какие работы необходимо произвести',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <%= f.text_area 'addtext', placeholder:'Дополнительная информация', cols: 40, rows: 5, class:'form-control' %>
+              </div>
+            </div>
+            <div class="form-group ">
+
+              <div class="col-sm-6 modalmargin">
+                <%= image_tag(image_path('capthca/'+@n3.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/plus.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/'+@n4.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/eqal.png'), class: 'capctha',alt:'')%>
+                <input class="" id="capinput_service" name="n3" required="required" placeholder="Ответ" type="number">
+              </div>
+              <div class="col-sm-3 modalmargin">
+                <%= f.submit 'ОТПРАВИТЬ' , id: 'servicesub',class:'btn btn-primary form-control'%>
+              </div>
+              <div class="col-sm-3 modalmargin" align="right">
+                <%= f.submit 'ЗАКРЫТЬ' , class:'btn btn-default form-control',id: 'serviceclose' , :data => {:dismiss => 'modal'}%>
+              </div>
+            </div>
+            <input id="nn1" name="n1" value="<%= @n3%>" type="hidden" />
+            <input id="nn2" name="n2" value="<%= @n4%>" type="hidden" />
+            <input id="nn3" name="ft" value="2" type="hidden" />
+        <% end %>
+      </div>
+      <div class="modalmargin">
+        <p style="margin-left: 25px; color:red; font-size: 10px;text-align: center;">Отправляя форму, Вы соглашаетесь на обработку персональных данных.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal form-avtoservice end -->
+<!--modal form-testdrive start -->
+<%  @n5 =  rand(10)%>
+<%  @n6 =  rand(10)%>
+<div id="modaltestdrive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="caperr_testdrive">ffff</div>
+        <h4 class="heading-border-bottom-short border-primary modal-title" id="myModalLabel">Форма заказа тест-драйва</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for Uzer.new , remote: true  do |f|%>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'fio', placeholder:'Представьтесь, пожалуйста' , :required => true, class:'form-control'%>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'phone', placeholder:'Ваш телефон для звонка оператора' , :required => true, class:'form-control', :data => {:mask=> '+7 (999) 999-99-99'}%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'calltime',
+                                 '<option>c 8 до 10</option>
+                                 <option>c 10 до 12</option>
+                                 <option>c 13 до 15</option>
+                                 <option>c 15 до 17</option>
+                                 <option>c 17 до 19</option>' ,
+                                 :include_blank => 'Удобное время для звонка',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'preferday', options_for_select(@arr.collect{ |u| [u] }),
+                                 :prompt => 'Желаемая дата',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'prefercar',
+                                 ' <option>LADA VESTA</option>
+                                   <option>LADA XRAY</option>',
+                                 :include_blank => 'Модель автомобиля',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="fancy-checkbox">
+                    <input type="checkbox" required="required">
+                    <span style="font-size: 12px";>Я ознакомлен <a href="/avtosalon#rules">с правилами и условиями</a> проведения тест-драйва.</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+
+              <div class="col-sm-6 modalmargin">
+                <%= image_tag(image_path('capthca/'+@n5.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/plus.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/'+@n6.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/eqal.png'), class: 'capctha',alt:'')%>
+                <input class="" id="capinput_testdrive" name="n3" required="required" placeholder="Ответ" type="number">
+              </div>
+              <div class="col-sm-3 modalmargin">
+                <%= f.submit 'ОТПРАВИТЬ' , id: 'testdrivesub',class:'btn btn-primary form-control'%>
+              </div>
+              <div class="col-sm-3 modalmargin" align="right">
+                <%= f.submit 'ЗАКРЫТЬ' , class:'btn btn-default form-control',id: 'testdriveclose' , :data => {:dismiss => 'modal'}%>
+              </div>
+            </div>
+            <input id="nn1" name="n1" value="<%= @n5%>" type="hidden" />
+            <input id="nn2" name="n2" value="<%= @n6%>" type="hidden" />
+            <input id="nn3" name="ft" value="3" type="hidden" />
+        <% end %>
+      </div>
+      <div class="modalmargin">
+        <p style="margin-left: 25px; color:red; font-size: 10px;text-align: center;">Отправляя форму, Вы соглашаетесь на обработку персональных данных.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal form-testdrive end -->
+<!--modal form-testdrive start -->
+<%  @n7 =  rand(10)%>
+<%  @n8 =  rand(10)%>
+<div id="modalcredit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="caperr_credit">ffff</div>
+        <h4 class="heading-border-bottom-short border-primary modal-title" id="myModalLabel">Форма заказа консультации сотрудника банка</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for Uzer.new , remote: true  do |f|%>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'fio', placeholder:'Представьтесь, пожалуйста' , :required => true, class:'form-control'%>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= f.text_field 'phone', placeholder:'Ваш телефон для звонка оператора' , :required => true, class:'form-control', :data => {:mask=> '+7 (999) 999-99-99'}%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'calltime',
+                                 '<option>c 8 до 10</option>
+                                 <option>c 10 до 12</option>
+                                 <option>c 13 до 15</option>
+                                 <option>c 15 до 17</option>
+                                 <option>c 17 до 19</option>' ,
+                                 :include_blank => 'Удобное время для звонка',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <%= select_tag 'prefercar',
+                                 '<option>Vesta Седан</option>
+                                    <option>X-RAY кроссовер</option>
+                                    <option>Largus 5 мест</option>
+                                    <option>Largus Cross 5 мест</option>
+                                    <option>Largus 7 мест</option>
+                                    <option>Largus Cross 7 мест</option>
+                                    <option>Largus Фургон</option>
+                                    <option>Granta Седан</option>
+                                    <option>Granta Лифтбек</option>
+                                    <option>Granta Sport</option>
+                                    <option>Kalina Хэтчбек</option>
+                                    <option>Kalina Универсал</option>
+                                    <option>Kalina Cross</option>
+                                    <option>Kalina Sport</option>
+                                    <option>Priora Седан</option>
+                                    <option>4x4 3 дв</option>
+                                    <option>4x4 Urban 3 дв</option>
+                                    <option>4x4 5 дв</option>
+                                    <option>4x4 Urban 5 дв</option>',
+                                 :prompt => 'Желаемая модель',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <%= select_tag 'preferbank',
+                                 ' <option>СЕТЕЛЕМ</option>
+                                   <option>РУССФИНАНС</option>',
+                                 :include_blank => 'Выберете банк',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <%= select_tag 'credittime',
+                                 '<option>24 месяца</option>
+                                    <option>30 месяцев</option>
+                                    <option>36 месяцев</option>
+                                    <option>42 месяца</option>
+                                    <option>48 месяцев</option>
+                                    <option>54 месяца</option>
+                                    <option>60 месяцев</option>',
+                                 :include_blank => 'Срок кредита',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <%= select_tag 'firstmoney',
+                                 '<option>20 %</option>
+                                    <option>30 %</option>
+                                    <option>40 %</option>
+                                    <option>50 %</option>',
+                                 :include_blank => 'Первоначальный взнос',
+                                 :required => true,
+                                 class:'form-control'
+                  %>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+
+              <div class="col-sm-6 modalmargin">
+                <%= image_tag(image_path('capthca/'+@n7.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/plus.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/'+@n8.to_s+'.png'), class: 'capctha',alt:'')%>
+                <%= image_tag(image_path('capthca/eqal.png'), class: 'capctha',alt:'')%>
+                <input class="" id="capinput_credit" name="n3" required="required" placeholder="Ответ" type="number">
+              </div>
+              <div class="col-sm-3 modalmargin">
+                <%= f.submit 'ОТПРАВИТЬ' , id: 'creditsub',class:'btn btn-primary form-control'%>
+              </div>
+              <div class="col-sm-3 modalmargin" align="right">
+                <%= f.submit 'ЗАКРЫТЬ' , class:'btn btn-default form-control',id: 'creditclose' , :data => {:dismiss => 'modal'}%>
+              </div>
+            </div>
+            <input id="nn1" name="n1" value="<%= @n7%>" type="hidden" />
+            <input id="nn2" name="n2" value="<%= @n8%>" type="hidden" />
+            <input id="nn3" name="ft" value="4" type="hidden" />
+        <% end %>
+      </div>
+      <div class="modalmargin">
+        <p style="margin-left: 25px; color:red; font-size: 10px;text-align: center;">Отправляя форму, Вы соглашаетесь на обработку персональных данных.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal form-testdrive end -->
+<div class="metrika">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter39709300 = new Ya.Metrika({
+                      id:39709300,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/39709300" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</div>
