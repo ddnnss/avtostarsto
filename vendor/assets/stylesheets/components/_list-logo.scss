@@ -6,7 +6,7 @@
 	text-align: center;
 
 	> li {
-		margin: 1em 2.5em;
+		margin: 0;
 	}
 
 	@include max-screen($break-xsmall) {

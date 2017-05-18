@@ -11,13 +11,13 @@
             <div class="container">
               <div class="sixteen columns contain">
                 <h2 data-toptitle="36%">НАСТРОЙСЯ НА ЛЕТО</h2>
-                <p data-bottomtext="36%">С 1 июля по 31 августа 2017
-                  Диагностика автомобиля за 299 рублей
-                </p>
-                <div class="links" data-bottomlinks="30%">
 
+                <div class="links" data-bottomlinks="30%">
+                  <p data-bottomtext="36%" >С 1 июля по 31 августа 2017
+                    Диагностика автомобиля за 299 рублей
+                  </p >
                 </div>
-                <%= image_tag(image_path('granta.png'), class: 'item', data: {'topimage' => '19%'} )%>
+                <%= image_tag(image_path('granta.png'), class: 'item',width: '10%', data: {'topimage' => '19%'} )%>
 
               </div>
             </div><!-- End Container -->
@@ -52,61 +52,175 @@
 </div>
 
 
+<ul class=" margin-top-30 list-inline list-logo ">
+  <li>
+    <%= image_tag(image_path('audi.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('bmw.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('fiat.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('honda.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('hyundai.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('kia.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('lexus.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('mercedes.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('mitsu.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('nissan.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('skoda.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('toyota.png') )%>
+  </li>
+  <li>
+    <%= image_tag(image_path('volks.png') )%>
+  </li>
 
-<section class="no-padding-bottom">
+</ul>
+<section class="no-padding-top no-padding-bottom">
+
   <div class="container">
     <div class="section-heading-center">
-      <h2 class="heading-border heading-thin">УСЛУГИ</h2>
+      <h2 class="heading-border heading-thin border-primary">УСЛУГИ</h2>
     </div>
     <div class="row icon-info-center-group">
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-shopping-basket ico-styled-lg ico-styled-circle-solid bg-primary"></i>
+          <%= image_tag(image_path('remontdv.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Ремонт двигателя</h3>
           <p>Техобслуживание двигателя и ремонт неисправностей ДВС импортных и отечественных автомобилей.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-credit-card ico-styled-lg ico-styled-circle-solid bg-primary"></i>
+          <%= image_tag(image_path('remonttor.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Ремонт тормозной системы</h3>
           <p>Ввыполним ремонт любого узла тормозной системы, а также осуществим замену деталей.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-building-o ico-styled-lg ico-styled-circle-solid bg-primary"></i>
+          <%= image_tag(image_path('diagnost.jpg'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Компьютерная диагностика</h3>
           <p>Тестирование электронных систем и блоков автомобиля на выявление  и устранение ошибок.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-html5 fa-5x text-primary"></i>
+          <%= image_tag(image_path('razval.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Развал-схождение</h3>
           <p>Регулирование угла наклона колес на компьютерном 3D стенде для автомобилей всех марок.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-cloud ico-styled-lg ico-styled-circle-solid bg-primary"></i>
+          <%= image_tag(image_path('maslo.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Замена масла и фильтровe</h3>
           <p>Качественная замена масел и фильтров, фильтры и масла в наличии, а также на ваши собственные.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
-          <i class="fa fa-database ico-styled-lg ico-styled-circle-solid bg-primary"></i>
+          <%= image_tag(image_path('kuzov.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Кузовные и малярные работы</h3>
           <p>Устранение сколов, царапин, восстановление геометрии кузова, антикоррозийная обработка.</p>
-          <a href="#" class="more">Learn More <i class="fa fa-angle-right"></i></a>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<section class="no-padding-top no-padding-bottom">
+  <div class="container">
+    <div class="section-heading-center">
+      <h2 class="heading-border heading-thin border-primary">ПОСЛЕДНИЕ РАБОТЫ</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail thumbnail-hover thumbnail-no-border">
+          <span class="overlay"></span>
+          <a href="<%= image_path('last1.jpg') %>" class="image-magnific">
+            <%= image_tag(image_path('last1.jpg') )%>
+            <span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail thumbnail-hover thumbnail-no-border">
+          <a href="<%= image_path('last1.jpg') %>" class="image-magnific">
+            <span class="overlay"></span>
+            <%= image_tag(image_path('last1.jpg') )%>
+            <span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail thumbnail-hover thumbnail-no-border">
+          <a href="<%= image_path('last1.jpg') %>" class="image-magnific">
+            <span class="overlay"></span>
+            <%= image_tag(image_path('last1.jpg') )%>
+            <span class="thumbnail-icon">Покраска деталей кузова<br/>Полировка и хим.чистка</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="no-padding-bottom">
+  <div class="">
+    <div class="cta-big cta-big-centered">
+      <div class="container">
+        <div class="main clearfix">
+          <%= image_tag(image_path('quizz.png'),class: 'img-responsive main-img' )%>
+          <div class="right">
+            <div class="section-heading">
+              <h2 class="heading-border-bottom-short border-primary">Остались вопросы?</h2>
+            </div>
+            <p class="lead">Оставьте Ваш номер и мы перезвоним</p>
+            <form class="newsletter-form" method="post" style="width: 70%">
+              <div class="input-group input-group-lg">
+                <input style="font-size: 40px !important;" type="email" class="form-control" name="email" placeholder="Ваш номер">
+                <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-spinner fa-spin"></i><span>Жду звонка</span></button>
+								</span>
+              </div>
+              <div class="alert"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+

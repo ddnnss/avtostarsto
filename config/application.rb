@@ -17,8 +17,8 @@ module AvtoStar
     config.assets.paths << Rails.root.join('app','assets','images','menu')
     config.assets.paths << Rails.root.join('app','assets','images','menu','splash')
     config.assets.paths << Rails.root.join('app','assets','images','slider')
-    config.assets.paths << Rails.root.join('app','assets','images','homepage')
+    config.assets.paths << Rails.root.join('app','assets','images','brands')
     config.assets.paths << Rails.root.join('app','assets','images','homepage','capthca')
-    config.assets.paths << Rails.root.join('app','assets','images','pages')
+    config.assets.paths << Rails.root.join('app','assets','images','pages','index')
   end
 end

@@ -26,6 +26,5 @@
 //= require jasny-bootstrap
 //= require jquery.magnific-popup
 //= require crossfader
-//= require jquery.themepunch.tools.min
-//= require jquery.waypoints.min
+
 
