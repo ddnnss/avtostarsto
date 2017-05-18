@@ -22,8 +22,10 @@
 //= require jquery.flexslider
 //= require morphext
 //= require owl.carousel
-//= require bravana
+
 //= require jasny-bootstrap
 //= require jquery.magnific-popup
 //= require crossfader
+//= require jquery.themepunch.tools.min
+//= require jquery.waypoints.min
 
