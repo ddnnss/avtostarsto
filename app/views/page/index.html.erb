@@ -1,19 +1,55 @@
-<section class="hero-unit hero-fullscreen-bg fullscreen-image" style="
-background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-background-image:url(<%= image_path('contact.jpg')%>); ">
-  <div class="container">
-    <div class="left">
-      <h2 class="hero-heading">EXTRAORDINARY</h2>
-      <p class="lead">Ultra Responsive and Multipurpose Bootstrap Theme</p>
-      <span class="scroll-down"><a href="#page-content" class="btn btn-lg btn-primary">LEARN MORE</a></span>
+<div class="tp-banner-container indent-header-2 page-main-content">
+
+  <div class="slider-1 clearfix">
+
+    <div class="flex-container">
+      <div class="flexslider loading">
+        <ul class="slides">
+          <!-- SLIDE 1 -->
+          <li style="background:url(<%= asset_path('slide-1.jpg') %>) repeat;background-position:50% 0;z-index: 0!important;">
+
+            <div class="container">
+              <div class="sixteen columns contain">
+                <h2 data-toptitle="36%">НАСТРОЙСЯ НА ЛЕТО</h2>
+                <p data-bottomtext="36%">С 1 июля по 31 августа 2017
+                  Диагностика автомобиля за 299 рублей
+                </p>
+                <div class="links" data-bottomlinks="30%">
+
+                </div>
+                <%= image_tag(image_path('granta.png'), class: 'item', data: {'topimage' => '19%'} )%>
+
+              </div>
+            </div><!-- End Container -->
+
+          </li><!-- End item -->
+
+          <!-- SLIDE 2-->
+
+
+          <!-- SLIDE 3
+          <li style="background:url(images/flexslider/slider-bg-3.jpg) no-repeat; background-position:50% 0">
+
+            <div class="container">
+              <div class="sixteen columns contain">
+
+                <h2 data-toptitle="36%">ALES MAECENAS</h2>
+                <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
+                <div class="links" data-bottomlinks="30%">
+                  <a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
+                </div>
+
+                <img src="images/flexslider/jump-men.png" class="item" alt="slide-item" data-topimage="19%"/>
+
+              </div>
+            </div><!-- End Container -->
+
+          </li><!-- End item -->-->
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="scroll-down down-arrow">
-    <a href="#page-content"><i class="fa fa-angle-down"></i></a>
-  </div>
-</section>
+</div>
 
 
 
