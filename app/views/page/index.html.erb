@@ -6,18 +6,16 @@
       <div class="flexslider loading">
         <ul class="slides">
           <!-- SLIDE 1 -->
-          <li style="background:url(<%= asset_path('slide-1.jpg') %>) repeat;background-position:50% 0;z-index: 0!important;">
+          <li style="background:url(<%= asset_path('slide-2.jpg') %>) repeat;background-position:50% 0;z-index: 0!important;">
 
             <div class="container">
               <div class="sixteen columns contain">
-                <h2 data-toptitle="36%">НАСТРОЙСЯ НА ЛЕТО</h2>
-
+                <h2 data-toptitle="36%"></h2>
+                <p data-bottomtext="36%" ></p >
                 <div class="links" data-bottomlinks="30%">
-                  <p data-bottomtext="36%" >С 1 июля по 31 августа 2017
-                    Диагностика автомобиля за 299 рублей
-                  </p >
+
                 </div>
-                <%= image_tag(image_path('granta.png'), class: 'item',width: '10%', data: {'topimage' => '19%'} )%>
+
 
               </div>
             </div><!-- End Container -->
@@ -136,7 +134,7 @@
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('maslo.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
-          <h3 class="title">Замена масла и фильтровe</h3>
+          <h3 class="title">Замена масла и фильтров</h3>
           <p>Качественная замена масел и фильтров, фильтры и масла в наличии, а также на ваши собственные.</p>
           <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
@@ -145,6 +143,30 @@
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('kuzov.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Кузовные и малярные работы</h3>
+          <p>Устранение сколов, царапин, восстановление геометрии кузова, антикоррозийная обработка.</p>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('razval.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title">Полировка кузова и химчистка салона</h3>
+          <p>Регулирование угла наклона колес на компьютерном 3D стенде для автомобилей всех марок.</p>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('maslo.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title">Антикоррозийная обработка</h3>
+          <p>Качественная замена масел и фильтров, фильтры и масла в наличии, а также на ваши собственные.</p>
+          <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('kuzov.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title">Восстановительный ремонт без покраски</h3>
           <p>Устранение сколов, царапин, восстановление геометрии кузова, антикоррозийная обработка.</p>
           <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
@@ -206,7 +228,7 @@
             <p class="lead">Оставьте Ваш номер и мы перезвоним</p>
             <form class="newsletter-form" method="post" style="width: 70%">
               <div class="input-group input-group-lg">
-                <input style="font-size: 40px !important;" type="email" class="form-control" name="email" placeholder="Ваш номер">
+                <input style="font-size: 40px !important;" type="email" class="form-control" name="email" placeholder="+7 (---) --- -- --">
                 <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-spinner fa-spin"></i><span>Жду звонка</span></button>
 								</span>
               </div>
