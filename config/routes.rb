@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get '/shops', to: 'page#shops'
   get '/otherservice', to: 'page#otherservice'
 
+  match '/contact'  => 'page#contact', via: [:post]
+
 
   get 'contacts', to: 'page#contacts'
 

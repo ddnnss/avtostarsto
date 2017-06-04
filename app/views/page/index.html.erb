@@ -10,7 +10,11 @@
 
             <div class="container">
               <div class="sixteen columns contain">
-                <h2 data-toptitle="36%">Работаем ежедневно</h2>
+                <h2 data-toptitle="36%" style="color: #FFFFFF;
+                    top: 39%;
+                    left: 0px;
+                    opacity: 1;
+                    font-size: 40px;">Работаем ежедневно</h2>
                 <p data-bottomtext="36%" >с 8 до 19 без перерыва </p >
                 <div class="links" data-bottomlinks="30%">
 
@@ -151,7 +155,7 @@
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('himchistka.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Полировка кузова и химчистка салона</h3>
-          <p>Регулирование угла наклона колес на компьютерном 3D стенде для автомобилей всех марок.</p>
+          <p>Многолетний опыт работы в области полировки кузова и химчистки салона автомобиля позволяет нам гарантировать 100-% ный результат.</p>
           <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
@@ -159,7 +163,7 @@
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('mercasol.gif'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Антикоррозийная обработка</h3>
-          <p>Качественная замена масел и фильтров, фильтры и масла в наличии, а также на ваши собственные.</p>
+          <p>Организация "Автостар" производит антикорозийную обработку в Пятигорске с использование материалов Mercasol</p>
           <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
@@ -167,7 +171,7 @@
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('bezpokraski.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
           <h3 class="title">Восстановительный ремонт без покраски</h3>
-          <p>Устранение сколов, царапин, восстановление геометрии кузова, антикоррозийная обработка.</p>
+          <p>Кузовной ремонт без покраски неоспоримо экономит немалые деньги. Вам не приходится оплачивать работы по окраске деталей, их разборке и сборке.</p>
           <a href="#" type="button" class="btn btn-primary btn-outline">Заказать</a>
         </div>
       </div>
@@ -185,18 +189,18 @@
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail thumbnail-hover thumbnail-no-border">
           <span class="overlay"></span>
-          <a href="<%= image_path('last1.jpg') %>" class="image-magnific">
-            <%= image_tag(image_path('last1.jpg') )%>
-            <span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+          <a href="<%= image_path('last3.jpg') %>" class="image-magnific">
+            <%= image_tag(image_path('last3.jpg') )%>
+            <span class="thumbnail-icon">Полный цикл ремонтно-<br/>восстановительных работа</span>
           </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail thumbnail-hover thumbnail-no-border">
-          <a href="<%= image_path('last1.jpg') %>" class="image-magnific">
+          <a href="<%= image_path('last2.jpg') %>" class="image-magnific">
             <span class="overlay"></span>
-            <%= image_tag(image_path('last1.jpg') )%>
-            <span class="thumbnail-icon"><i class="fa fa-expand"></i></span>
+            <%= image_tag(image_path('last2.jpg') )%>
+            <span class="thumbnail-icon">Выполняем кузовные и малярные<br/>работы любой сложности.</span>
           </a>
         </div>
       </div>
@@ -226,14 +230,20 @@
               <h2 class="heading-border-bottom-short border-primary">Остались вопросы?</h2>
             </div>
             <p class="lead">Оставьте Ваш номер и мы перезвоним</p>
-            <form class="newsletter-form" method="post" style="width: 70%">
-              <div class="input-group input-group-lg">
-                <input style="font-size: 40px !important;" type="email" class="form-control" name="email" placeholder="+7 (---) --- -- --">
-                <span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-spinner fa-spin"></i><span>Жду звонка</span></button>
+
+            <%= form_tag (contact_path)  do %>
+
+          <div class="input-group input-group-lg">
+            <%= text_field_tag 'phone', '+7(---)--- -- --' , :required => true, class:'form-control'%>
+
+
+
+             <span class="input-group-btn"> <%= submit_tag 'Жду звонка' , class:'btn btn-primary btn-lg center-block'%></span>
+
 								</span>
               </div>
               <div class="alert"></div>
-            </form>
+                <% end %>
           </div>
         </div>
 

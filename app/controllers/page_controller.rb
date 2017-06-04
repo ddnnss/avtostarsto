@@ -133,4 +133,10 @@ class PageController < ApplicationController
 крупнейший авторынок региона, оператор техосмотра, автосалон лада пятигорск '
     @description = 'Официальный дилер ПАО Автоваз, автосалон, станция технического обслуживания автомобилей, крупнейший авторынок региона, оператор техосмотра'
   end
+
+  def contact
+    @phone = params[:phone]
+    UserMailer.activation(@phone).deliver_now
+
+  end
 end
