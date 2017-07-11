@@ -1,0 +1,79 @@
+<div class="custom-tabs-line tabs-line-bottom">
+  <ul class="nav" role="tablist">
+    <li class="active carsmenuli" >
+      <%= image_tag(image_path('vesta-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="true" href="#tab-vesta" role="tab" data-toggle="tab">VESTA</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('xray-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-xray" role="tab" data-toggle="tab">X-RAY</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('granta-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-granta" role="tab" data-toggle="tab">GRANTA</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('largus-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-largus" role="tab" data-toggle="tab">LARGUS</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('kalina-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-kalina" role="tab" data-toggle="tab">KALINA</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('priora-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-priora" role="tab" data-toggle="tab">PRIORA</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('4x4-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-4x4" role="tab" data-toggle="tab">4x4</a>
+    </li>
+    <li class="carsmenuli">
+      <%= image_tag(image_path('concept-ico.png'), class: 'verticaltabsimages') %>
+      <a aria-expanded="false" href="#tab-concept" role="tab" data-toggle="tab">КОНЦЕПТЫ</a>
+    </li>
+  </ul>
+</div>
+<div class="tab-content">
+  <div class="tab-pane fade active in" id="tab-vesta">
+    <div class="row">
+      <%= render 'shared/vesta_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-xray">
+    <div class="row">
+      <%= render 'shared/xray_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-granta">
+    <div class="row">
+      <%= render 'shared/granta_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-largus">
+    <div class="row">
+      <%= render 'shared/largus_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-kalina">
+    <div class="row">
+      <%= render 'shared/kalina_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-priora">
+    <div class="row">
+      <%= render 'shared/priora_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-4x4">
+    <div class="row">
+      <%= render 'shared/4x4_tab' %>
+    </div>
+  </div>
+  <div class="tab-pane fade  in" id="tab-concept">
+    <div class="row">
+
+    </div>
+  </div>
+
+</div>

@@ -72,14 +72,15 @@ p#cf7_controls {
 .popover-icons{
   padding:10px;
   color: white;
-  border-right: solid 2px #F1A95C;
+  border-right: solid 2px #376BAF;
 }
 .popover-btn1{
   position: absolute;
   right: 5%;
   bottom: 120px;
   width: 200px;
-
+  color: #fff !important;
+  border-color: #fff;
 
 }
 .popover-btn2{
@@ -87,6 +88,9 @@ p#cf7_controls {
   right: 5%;
   bottom: 80px;
   width: 200px;
+  color: #fff !important;
+  border-color: #fff;
+
 
 }
 .popover-btn3{
@@ -94,7 +98,8 @@ p#cf7_controls {
   right: 5%;
   bottom: 40px;
   width: 200px;
-
+  color: #fff !important;
+  border-color: #fff;
 }
 
 .imgshadow{
@@ -185,7 +190,7 @@ p#cf7_controls {
 }
 
 .maincl{
-  color:#F1A95C;
+  color:#376BAF;
 }
 
 .herounitbg{
@@ -227,7 +232,7 @@ p#cf7_controls {
 
 .thead2{
   text-align: center;
-  background-color: #F1A95C;
+  background-color: #376BAF;
   color: #000;
 }
 

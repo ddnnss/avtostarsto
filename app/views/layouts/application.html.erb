@@ -32,7 +32,30 @@
       <!-- END NAVBAR -->
       <!-- PAGE HEADER MINIMAL CENTER -->
       <%= yield %>
+      <% if flash[:smssend] %>
+          <div id="sms-modal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: block; padding-right: 17px;">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title" id="myModalLabel2">Запрос отправлен</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Спасибо за обращение, <%= flash[:smssend] %>...</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle"></i> Закрыть</button>
 
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+              $( document ).ready(function(){
+                  $('#sms-modal').modal('show');
+              });
+          </script>
+      <% end %>
       <!-- END PAGE CONTENT -->
       <!-- FOOTER -->
       <%= render 'shared/footer' %>

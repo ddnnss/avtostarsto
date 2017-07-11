@@ -42,6 +42,16 @@
           <%= link_to '', root_path,  :class=>'fa fa-home' %>
         </li>
 
+        <li class="dropdown dropdown-mega ">
+          <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">ПРОДАЖА АВТОМОБИЛЕЙ LADA</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-mega-menu-container">
+              <div class="row">
+                <%= render 'shared/carsmenu' %>
+              </div>
+            </li>
+          </ul>
+        </li>
 
 
         <li class="dropdown dropdown-mega <%= @uslugigroup %>">

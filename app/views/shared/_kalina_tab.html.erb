@@ -1,0 +1,117 @@
+<div class="col-md-3 col-sm-3">
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a aria-expanded="true" href="#kalinahachback" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('kalinahachback.png'), class: 'verticaltabsimages') %></i> ХЭТЧБЕК</a></li>
+    <li class=""><a aria-expanded="true" href="#kalinauni" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('kalinauni.png'), class: 'verticaltabsimages') %></i> УНИВЕРСАЛ</a></li>
+    <li class=""><a aria-expanded="true" href="#kalinacross" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('kalinacross.png'), class: 'verticaltabsimages') %></i> КРОСС</a></li>
+    <li class=""><a aria-expanded="true" href="#kalinasport" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('kalinasport.png'), class: 'verticaltabsimages') %></i> СПОРТ</a></li>
+  </ul>
+</div>
+<div class="col-md-9 col-sm-9 popover-div-border">
+  <div class="tab-content tab-stacked">
+    <div class="tab-pane fade active in imgshadow" id="kalinahachback" style="height: 400px; background-image:url(<%= image_path('kalinahachback.jpg')%>); background-size: cover;">
+
+      <%= link_to "Обзор", model_kalinahatchback_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />6,6 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>405 500<sup>*</sup>
+        </div>
+
+
+        <!--  <div style="float:left; ">
+          <%= image_tag(image_path('testdrive_ico.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          ДОСТУПЕН<br />ТЕСТ-ДРАЙВ
+        </div>-->
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="kalinauni" style="height: 400px; background-image:url(<%= image_path('kalinauni.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_kalinauniversal_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />6,6 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>417 500<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="kalinacross" style="height: 400px; background-image:url(<%= image_path('kalinacross.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_kalinacross_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />6,6 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>482 100<sup>*</sup>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="kalinasport" style="height: 400px; background-image:url(<%= image_path('kalinasport.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_kalinasport_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />7,8 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>521 000<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

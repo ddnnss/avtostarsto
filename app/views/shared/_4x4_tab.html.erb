@@ -1,0 +1,118 @@
+<div class="col-md-3 col-sm-3">
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a aria-expanded="true" href="#4x43d" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('4x43d.png'), class: 'verticaltabsimages') %></i> 3 двери</a></li>
+    <li class=""><a aria-expanded="true" href="#4x4urban3d" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('4x4urban3d.png'), class: 'verticaltabsimages') %></i> URBAN 3 двери</a></li>
+    <li class=""><a aria-expanded="true" href="#4x45d" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('4x45d.png'), class: 'verticaltabsimages') %></i> 5 дверей</a></li>
+    <li class=""><a aria-expanded="true" href="#4x4urban5d" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('4x4urban5d.png'), class: 'verticaltabsimages') %></i> URBAN 5дверей</a></li>
+  </ul>
+</div>
+<div class="col-md-9 col-sm-9 popover-div-border">
+  <div class="tab-content tab-stacked">
+    <div class="tab-pane fade active in imgshadow" id="4x43d" style="height: 400px; background-image:url(<%= image_path('4x43d.jpg')%>); background-size: cover;">
+
+      <%= link_to "Обзор", model_lada4x43d_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,9 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>435 700<sup>*</sup>
+        </div>
+
+
+        <!--  <div style="float:left; ">
+          <%= image_tag(image_path('testdrive_ico.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          ДОСТУПЕН<br />ТЕСТ-ДРАЙВ
+        </div>-->
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="4x4urban3d" style="height: 400px; background-image:url(<%= image_path('4x4urban3d.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_lada4x4urban3d_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,9 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>482 100<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="4x45d" style="height: 400px; background-image:url(<%= image_path('4x45d.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_lada4x45d_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,9 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>479 700<sup>*</sup>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="4x4urban5d" style="height: 400px; background-image:url(<%= image_path('4x4urban5d.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_lada4x4urban5d_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,9 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>522 700<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

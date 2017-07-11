@@ -1,0 +1,434 @@
+<% @car = 'vesta'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+        <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">VESTA, СТИЛЬНАЯ, ЯРКАЯ</span></p>
+    <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+             <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ДИЗАЙН</h3>
+                <div class="margin-top-30"></div>
+                 <p class="carinfo">
+                   LADA Vesta стильная, стремительная, яркая – такая, каким и должен быть автомобиль LADA нового поколения.
+                   Силуэт седана выдержан в единой «Икс»-концепции и выглядит гармонично и современно.
+                 </p>
+                 <p class="carinfo">Новый фирменный стиль легко узнаваем в деталях: выделенной тёмным цветом облицовке радиатора, подштамповках по бокам, световозвращателях задних
+                   фонарей. За счет приподнятой подоконной линии, удлиненного капота и покатой крыши автомобиль смотрится динамично и атлетично.
+                   Эффектно подчеркивает смелый дизайн LADA Vesta насыщенная палитра цветов.
+                 </p>
+                  <p class="carinfo">С таким автомобилем вряд ли удастся остаться незамеченным на дороге.
+                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">БОГАТЫЙ ВЫБОР ОПЦИЙ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Максимальный комфорт от вождения позволят получить умные опции, которыми оснащен новый автомобиль:
+                </p>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">мультимедийная система с 7″ дисплеем с TouchScreen, поддержкой Bluetooth, HandsFree;</li>
+                  <li style="text-align: justify;">автоматический климат-контроль с функцией поддержания заданной температуры и режимом “Быстрый обогрев ветрового стекла”;</li>
+                  <li style="text-align: justify;">охлаждаемый вещевой ящик;</li>
+                  <li style="text-align: justify;">бортовой компьютер, позволяющий отследить расход топлива, определить время и среднюю скорость поездки, и другие важные показатели;</li>
+                  <li style="text-align: justify;">руль с клавишами управления мультимедиа и круиз-контролем;</li>
+                  <li style="text-align: justify;">разъемы USB и AUX в нише для мобильного телефона;</li>
+                  <li style="text-align: justify;">зуммер включенного стояночного тормоза;</li>
+                  <li style="text-align: justify;">круиз-контроль с функцией ограничителя скорости;</li>
+                  <li style="text-align: justify;">датчик дождя;</li>
+                  <li style="text-align: justify;">подсветка мест входа-выхода в передних дверях: простая, но удобная функция, повышающая комфорт и безопасность.</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p2.jpg'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/p3.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p4.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">КОМФОРТ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA Vesta – автомобиль с новым взглядом на эргономику. Это ясно с первого прикосновения к мощной ручке двери.
+                  Мягкое срабатывание механизмов, просторный салон, крупные элементы панели приборов и руля.
+                  В совокупности всё это создает ощущение надежности, качества и комфорта.
+
+                </p>
+                <p class="carinfo">Увеличенные колесная база и колея позволили расширить диапазон
+                  регулировок водительского кресла, добавить места для ног пассажирам второго ряда. Конструкция интерьера обеспечивает высокий
+                  акустический комфорт на любых типах дорог. Кресло водителя легко регулируется по высоте и поясничной поддержке.
+                </p>
+                <p class="carinfo">Спинка заднего сидения опускается по частям, увеличивая пространство и без того вместительного багажника.
+                  А на вопрос: «Что первично – отточенная управляемость или высокий клиренс и энергоемкая подвеска?» у
+                  LADA Vesta есть свой ответ: она просто совмещает все эти качества.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">БЕЗОПАСНОСТЬ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Высокая степень безопасности, начиная с самой доступной комплектации, – одно из главных преимуществ LADA Vesta.
+                  Каждый автомобиль оснащен системой контроля устойчивости ESC, антиблокировочной системой тормозов ABS,
+                  системой помощи при старте на подъеме, подушкой безопасности водителя и тремя L-образными подголовниками,
+                  функцией автоматического запирания дверей при движении.
+                </p>
+                <p class="carinfo">
+                В более полных комплектациях LADA Vesta оборудована не только
+                фронтальными, но и боковыми подушками безопасности. Высокий уровень защиты предусмотрен и для самых юных пассажиров:
+                замок блокировки задних дверей, система крепления детских сидений ISOFIX.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p5.jpg'), class: 'carinfoimg thumbnail')%>
+
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p6.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ДРАЙВ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  За динамику LADA Vesta отвечает модернизированный силовой агрегат объемом 1.6 литра мощностью 106 л.с.
+                  Разгон до первой сотни происходит за 11,8 сек, а максимальная скорость составляет 178 км/ч.
+                </p>
+                <p class="carinfo"> Реализовать любой стиль вождения, от динамичного до степенного, позволит автоматизированная коробка передач (АМТ).
+                  В программном управлении контроллера насчитывается более 20 типовых алгоритмов переключения, которые мгновенно меняются в
+                  зависимости от манеры управления автомобилем. Водитель может выбрать и «мануальный» режим – и тогда ритм
+                  поездки можно задавать легким движением джойстика.
+                </p>
+                <p class="carinfo">Все комплектации LADA Vesta доступны и с механической коробкой передач,
+                  которая отличается плавным переключением, виброакустическим комфортом и обеспечивает низкий расход топлива.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">АДАПТАЦИЯ К ЗИМНИМ УСЛОВИЯМ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA Vesta демонстрирует высокий уровень надежности даже в условиях сурового российского климата:
+                </p>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">двигатель уверенно запускается при температуре до -30°;</li>
+                  <li style="text-align: justify;">конструкция дверных замков защищает их от замерзания;</li>
+                  <li style="text-align: justify;">эффективная система отопления быстро прогревает салон;</li>
+                  <li style="text-align: justify;">заглушка радиатора предотвращает промерзание мотора;</li>
+                  <li style="text-align: justify;">электроподогрев предусмотрен для сидений, стекол и зеркал;</li>
+                  <li style="text-align: justify;">в эргономичном салоне удобно расположиться в зимней одежде;</li>
+                  <li style="text-align: justify;">все переключатели можно активировать, не снимая перчаток;</li>
+                  <li style="text-align: justify;">при открывании дверей исключается попадание снега в салон.</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p7.jpg'), class: 'carinfoimg thumbnail')%>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/vesta/sedan/print_tth.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <tbody>
+          </tbody><thead>
+        <tr><th>Двигатель, трансмиссия</th>
+          <td align="center"><b>1,6 л 16-кл., 5МТ, 106 л.с.</b></td>
+          <td align="center"><b>1,6 л 16-кл., 5АМТ, 106 л.с.</b></td>
+        </tr>
+        </thead>
+          <tbody><tr><th colspan="3">Кузов</th></tr>
+          <tr><th>Колесная формула / ведущие колеса</th>
+            <td colspan="2" align="center">4 х 2 / передние</td>
+          </tr>
+          <tr><th>Расположение двигателя</th>
+            <td colspan="2" align="center">переднее поперечное</td>
+          </tr>
+          <tr><th>Тип кузова / количество дверей</th>
+            <td colspan="2" align="center">седан / 4</td>
+          </tr>
+          <tr><th>Количество мест</th>
+            <td colspan="2" align="center">2+3</td>
+          </tr>
+          <tr><th>Длина / ширина / высота, мм</th>
+            <td colspan="2" align="center">4410 / 1764 / 1497</td>
+          </tr>
+          <tr><th>База, мм</th>
+            <td colspan="2" align="center">2635</td>
+          </tr>
+          <tr><th>Колея передних / задних колес, мм</th>
+            <td colspan="2" align="center">1510 / 1510</td>
+          </tr>
+          <tr><th>Дорожный просвет, мм</th>
+            <td colspan="2" align="center">178</td>
+          </tr>
+          <tr><th>Объем багажного отделения, л</th>
+            <td colspan="2" align="center">480</td>
+          </tr>
+          <tr><th colspan="3">Двигатель</th></tr>
+          <tr><th>Тип двигателя</th>
+            <td colspan="2" align="center">бензиновый</td>
+          </tr>
+          <tr><th>Система питания</th>
+            <td colspan="2" align="center">впрыск топлива с электронным управлением</td>
+          </tr>
+          <tr><th>Количество, расположение цилиндров</th>
+            <td colspan="2" align="center">4, рядное</td>
+          </tr>
+          <tr><th>Рабочий объем, куб. см</th>
+            <td colspan="2" align="center">1596</td>
+          </tr>
+          <tr><th>Максимальная мощность, л.с. / кВт / об. мин.</th>
+            <td colspan="2" align="center">106 / 78 / 5800</td>
+          </tr>
+          <tr><th>Максимальный крутящий момент, Нм / об. мин.</th>
+            <td colspan="2" align="center">148 / 4200</td>
+          </tr>
+          <tr><th>Топливо</th>
+            <td colspan="2" align="center">бензин, min 92</td>
+          </tr>
+          <tr><th colspan="3">Динамические характеристики</th></tr>
+          <tr><th>Максимальная скорость, км/ч</th>
+            <td colspan="2" align="center">178</td>
+          </tr>
+          <tr><th>Время разгона&nbsp;0-100&nbsp;км/ч, с</th>
+            <td align="center">11,8</td>
+            <td align="center">12,8</td>
+          </tr>
+          <tr><th colspan="3">Расход топлива</th></tr>
+          <tr><th>Городской цикл, л/100 км</th>
+            <td align="center">9,3</td>
+            <td align="center">8,9</td>
+          </tr>
+          <tr><th>Загородный цикл, л/100 км</th>
+            <td align="center">5,5</td>
+            <td align="center">5,3</td>
+          </tr>
+          <tr><th>Смешанный цикл, л/100 км</th>
+            <td align="center">6,9</td>
+            <td align="center">6,6</td>
+          </tr>
+          <tr><th colspan="3">Масса</th></tr>
+          <tr><th>Снаряженная масса, кг</th>
+            <td colspan="2" align="center">1230...1270</td>
+          </tr>
+          <tr><th>Технически допустимая максимальная масса, кг</th>
+            <td colspan="2" align="center">1670</td>
+          </tr>
+          <tr><th>Максимальная масса прицепа без тормозной системы, кг</th>
+            <td colspan="2" align="center">450</td>
+          </tr>
+          <tr><th>Максимальная масса прицепа с тормозной системой, кг</th>
+            <td colspan="2" align="center">900</td>
+          </tr>
+          <tr><th>Объем топливного бака, л</th>
+            <td colspan="2" align="center">55</td>
+          </tr>
+          <tr><th colspan="3">Трансмиссия</th></tr>
+          <tr><th>Тип трансмиссии</th>
+            <td align="center">5МТ</td>
+            <td align="center">5АМТ</td>
+          </tr>
+          <tr><th>Передаточное число главной передачи</th>
+            <td colspan="2" align="center">3,9</td>
+          </tr>
+          <tr><th colspan="3">Подвеска</th></tr>
+          <tr><th>Передняя</th>
+            <td colspan="2" align="center">независимая, типа Макферсон, пружинная, со стабилизатором поперечной устойчивости</td>
+          </tr>
+          <tr><th>Задняя</th>
+            <td colspan="2" align="center">полузависимая со связанными рычагами, пружинная, с газонаполненными телескопическими амортизаторами</td>
+          </tr>
+          <tr><th colspan="3">Рулевое управление</th></tr>
+          <tr><th>Рулевой механизм</th>
+            <td colspan="2" align="center">шестерня-рейка</td>
+          </tr>
+          <tr><th colspan="3">Шины</th></tr>
+          <tr><th>Размерность</th>
+            <td colspan="2" align="center">185/65 R15 (88, Н/T); 195/55 R16 (91, Т)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+                <%= image_tag(image_path('pages/'+@car+'/colors/lednik.png'), class: 'carinfoimg thumbnail opaque')%>
+                <%= image_tag(image_path('pages/'+@car+'/colors/serdolik.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/angkor.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/lime.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/crypton.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/bluz.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/fantom.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/pluton.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/blackzem.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/platina.png'), class: 'carinfoimg thumbnail')%>
+             </div>
+        </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #ffffff; color: #0b0b0b">Ледниковый (221)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #860e02; color: #ffffff">Сердолик (195)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #3f3a32; color: #ffffff">Ангкор (246)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #b8e228; color: #ffffff">Лайм (366)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #4d5145; color: #ffffff">Криптон (372)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #4f5b64; color: #ffffff">Блюз (492)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #686866; color: #ffffff">Фантом (496)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #515958; color: #ffffff">Плутон (608)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #1c1d1a; color: #ffffff">Черная жемчужина (676)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #c3c4c4; color: #ffffff">Платина (691)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

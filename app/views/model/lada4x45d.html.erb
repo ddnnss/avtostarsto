@@ -1,0 +1,503 @@
+<% @car = '4x45d'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+      <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">4x4, ЛЕГЕНДА, ИСТОРИЯ</span></p>
+      <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ЛЕГЕНДА</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA 4х4 - легендарный автомобиль, который не может жить без сильных ощущений. Он штурмовал Северный полюс и Эверест,
+                  участвовал в ралли Париж-Дакар, осваивал Антарктиду.Его знают и любят на всех континентах. Он силен, оборотист и неприхотлив.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">НАДЕЖНОСТЬ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Его призвание - бездорожье, но он прекрасно себя чувствует и в городских джунглях.
+                </p>
+                <p class="carinfo">
+                  За свою историю эта модель доказала, что принципы, заложенные 30 лет назад, по-прежнему актуальны:
+                  уникальная проходимость, надежность и простота обслуживания. В обновленной LADA 4х4 они получили более совершенное воплощение.
+                </p>
+
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p2.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+
+
+
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/4x4/5dv/print_prices.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <thead>
+          <tr>
+            <th style="width: 557px;">&nbsp;</th>
+            <th style="width: 1299px;" class="info"> <span class="complect"></span> <span class="complect-name">1,7 л 8-кл., 83 л.с., 5МТ</span></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Кузов</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Колесная формула / ведущие колеса								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              4 x 4 / все									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Расположение двигателя								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              переднее продольное									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Объем багажного отделения в пассажирском / грузовом вариантах, л								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              420 / 780									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Тип кузова / количество дверей								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              универсал / 5									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Количество мест								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              5									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Длина / ширина / высота, мм								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              4240 / 1680 / 1640									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              База, мм								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              2700									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Колея передних / задних колес, мм								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              1440 / 1420									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Дорожный просвет, мм								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              205									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Двигатель</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Максимальный крутящий момент, Нм / об. мин.								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              129 / 4000									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Топливо								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              бензин, min 95									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Код двигателя								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              21214									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Тип двигателя								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              бензиновый									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Система питания								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              впрыск топлива с электронным управлением									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Количество, расположение цилиндров								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              4, рядное									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Рабочий объем, куб. см								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              1690									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Максимальная мощность, кВт (л.с.) / об. мин.								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              61 (83) / 5000									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Динамические характеристики</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Максимальная скорость, км/ч								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              137									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Время разгона 0-100 км/ч, с								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              19,0									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Расход топлива</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Городской цикл, л/100 км								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              12,1									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Загородный цикл, л/100 км								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              8,3									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Смешанный цикл, л/100 км								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              9,9									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Масса</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Технически допустимая максимальная масса, кг								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              1850									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Объем топливного бака, л								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              65									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Снаряженная масса, кг								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              1425									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Трансмиссия</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Тип трансмиссии								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              5МТ									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Передаточное число главной передачи								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              3,9									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Подвеска</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Передняя								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              независимая, на поперечных рычагах, пружинная, с гидравлическими телескопическими амортизаторами и стабилизатором поперечной устойчивости									</td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Задняя								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              зависимая, рычажная, пружинная, с гидравлическими телескопическими амортизаторами									</td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Рулевое управление</span></td>
+          </tr>
+          <tr class="table-title">
+            <td colspan="2"><span class="title">Шины</span></td>
+          </tr>
+          <tr class="rows">
+
+            <td>
+
+
+              Размерность								</td>
+            <td class="description" data-title="1,7 л 8-кл., 83 л.с., 5МТ">
+              185/75 R16 (92/95, Q/Т)									</td>
+          </tr>
+
+
+          </tbody></table>
+
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+              <%= image_tag(image_path('pages/'+@car+'/colors/oblako.png'), class: 'carinfoimg thumbnail opaque')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/plamya.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/borneo.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/pantera.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/koriandr.png'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #FEFAF4; color: #000">Белое облако (240)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #D1001C; color: #ffffff">Пламя (193)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #444E4E; color: #ffffff">Борнео (633)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #161313; color: #ffffff">Пантера (672)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #898664; color: #ffffff">Кориандр (790)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,386 @@
+<% @car = 'grantaliftback'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+      <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">GRANTA, ДОСТУПНАЯ, НОВАЯ, ТВОЯ</span></p>
+      <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">КОГДА ХОЧЕТСЯ НОВОГО</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Когда все автомобили похожи один на другой... Когда глаз тоскует по ори­гинальному стилю...
+                  Когда приходит понимание, что доступная и практичная машина может быть по-настоящему красивой... Когда хочется нового...
+                  Наступает время LADA Granta лифтбек!
+               </p>
+                <p class="carinfo">
+                  Стремительный стиль и багажник солидного объема - такого сочетания в LADA еще не было! При этом удалось сохранить
+                  фамильные черты LADA Granta - подъемную цену, просторный салон и дорожный просвет кроссовера.
+                </p>
+                <p class="carinfo">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">СТИЛЬ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Динамикой своего стиля лифтбек Granta задаёт новый стандарт народного автомобиля.
+                  Классические атрибуты скоростной машины - ниспадающая крыша и восходящая подоконная линия...
+                 </p>
+                <p class="carinfo">
+                  Оригинальная бамперная группа, задние фонари горизонтальной компоновки, новые зеркала - все это формирует спортивный,
+                рельефный облик. Как принято в автомобилях LADA, стиль полностью функционален.
+                Оригинальная форма пятой двери - это хорошие аэродинамические свойства и минимальная загрязняемость заднего стекла.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p2.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p3.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ДИНАМИКА</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Если отдыхать - то активно, если водить - то с увлечением! Подвеска LADA Granta получила новые
+                  настройки - в сочетании с укороченной рулевой рейкой - это дарит удовольствие от вождения и придаёт уверенность в сложных дорожных условиях.
+                </p>
+                <p class="carinfo">
+                  Современная управляемость, энергоемкая подвеска и истинно российская про­ходимость - все это LADA Granta
+                  лифтбек, готовый и к ежедневным поездкам и к открытию новых уголков страны.
+                </p>
+                <p class="carinfo">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">КОМФОРТ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">Просторный салон и мягкие сиденья - фамильная черта автомобилей на платформе Granta.
+                  Мощная климатическая система создает комфорт в любое время года. Современная трансмиссия - как «автомат»,
+                  так и «механика» - обеспечивает комфортное управление автомобилем. Электронная педаль «газа» сглаживает процесс старта и
+                  переключения передач, что особенно приятно для начинающих водителей.
+                </p>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">Мультимедиасистема с сенсорным управлением: современный функционал и удобный интерфейс</li>
+                  <li style="text-align: justify;">Несколько полочек и емкостей для размещения мелких предметов - автомобиль по-домашнему уютен</li>
+                  <li style="text-align: justify;">Эффективная система вентиляции и отопления, вентилятор с пониженным уровнем шума</li>
+                  <li style="text-align: justify;">Новые опоры двигателя, улучшенный пакет шумоизоляции повышают акустический комфорт</li>
+                  <li style="text-align: justify;">Большие наружные зеркала обеспечивают отличную обзорность</li>
+                  <li style="text-align: justify;">Тросовый привод МКП: высокая четкость переключений, сниженный уровень вибраций</li>
+                  <li style="text-align: justify;">АКП: тонкая настройка и повышенная мягкость переключений</li>
+                  <li style="text-align: justify;">Воздуховоды к ногам задних пассажиров - LADA умеет заботиться о тех, кто рядом.<br>
+                  </li>
+                </ul>
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p4.jpg'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/p5.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/granta/liftback/print_prices.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <tbody>
+
+          <tr><th>Двигатель, трансмиссия</th>
+            <td align="center"><strong>1,6 л 8-кл., 5МТ, 87 л.с</strong></td>
+            <td align="center"><strong>1,6 л 16-кл., 5МТ, 106<br> л.с.</strong></td>
+            <td align="center"><strong>1,6 л 16-кл., 5АМТ, 106<br> л.с.</strong></td>
+          </tr>
+
+          <tr><th colspan="4">Кузов</th></tr>
+          <tr><th>Колесная формула / ведущие колеса</th>
+            <td colspan="3" align="center">4 х 2 / передние</td>
+          </tr>
+          <tr><th>Расположение двигателя</th>
+            <td colspan="3" align="center">переднее поперечное</td>
+          </tr>
+          <tr><th>Тип кузова / количество дверей</th>
+            <td colspan="3" align="center">лифтбек / 5</td>
+          </tr>
+          <tr><th>Длина / ширина / высота, мм</th>
+            <td colspan="3" align="center">4246 / 1700 / 1500</td>
+          </tr>
+          <tr><th>База, мм</th>
+            <td colspan="3" align="center">2476</td>
+          </tr>
+          <tr><th>Колея передних / задних колес, мм</th>
+            <td colspan="3" align="center">1430 / 1414</td>
+          </tr>
+          <tr><th>Объем багажного отделения в пассажирском / грузовом вариантах, л</th>
+            <td colspan="3" align="center">440 / 760</td>
+          </tr>
+          <tr><th colspan="4">Двигатель</th></tr>
+          <tr><th>Тип двигателя</th>
+            <td colspan="3" align="center">бензиновый</td>
+          </tr>
+          <tr><th>Система питания</th>
+            <td colspan="3" align="center">распределенный впрыск топлива с электронным управлением</td>
+          </tr>
+          <tr><th>Количество, расположение цилиндров</th>
+            <td colspan="3" align="center">4, рядное</td>
+          </tr>
+          <tr><th>Рабочий объем, куб. см</th>
+            <td colspan="3" align="center">1596</td>
+          </tr>
+          <tr><th>Максимальная мощность, л.с. / кВт / об. мин.</th>
+            <td align="center">87 / 64 / 5100</td>
+            <td align="center">106 / 78 / 5800</td>
+            <td align="center">106 / 78 / 5800</td>
+          </tr>
+          <tr><th>Максимальный крутящий момент, Нм / об. мин.</th>
+            <td align="center">140 / 3800</td>
+            <td align="center">148 / 4000</td>
+            <td align="center">148 / 4000</td>
+          </tr>
+          <tr><th>Топливо</th>
+            <td colspan="3" align="center">бензин с октановым числом не менее 95</td>
+          </tr>
+          <tr><th colspan="4">Динамические характеристики</th></tr>
+          <tr><th>Максимальная скорость, км/ч</th>
+            <td align="center">166</td>
+            <td align="center">179</td>
+            <td align="center">179</td>
+          </tr>
+          <tr><th>Время разгона 0-100 км/ч, с</th>
+            <td align="center">12,2</td>
+            <td align="center">10,9</td>
+            <td align="center">12,3</td>
+          </tr>
+          <tr><th colspan="4">Расход топлива</th></tr>
+          <tr><th>Городской цикл, л/100 км</th>
+            <td align="center">9,0</td>
+            <td align="center">8,6</td>
+            <td align="center">9,0</td>
+          </tr>
+          <tr><th>Загородный цикл, л/100 км</th>
+            <td align="center">5,8</td>
+            <td align="center">5,6</td>
+            <td align="center">5,2</td>
+          </tr>
+          <tr><th>Смешанный цикл, л/100 км</th>
+            <td align="center">7,0</td>
+            <td align="center">6,7</td>
+            <td align="center">6,6</td>
+          </tr>
+          <tr><th colspan="4">Масса</th></tr>
+          <tr><th>Снаряженная масса, кг</th>
+            <td colspan="3" align="center">1085...1160</td>
+          </tr>
+          <tr><th>Полная масса, кг</th>
+            <td colspan="3" align="center">1560</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа с тормозами, кг</th>
+            <td colspan="3" align="center">900</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа без тормозов, кг</th>
+            <td colspan="3" align="center">450</td>
+          </tr>
+          <tr><th>Объем топливного бака, л</th>
+            <td colspan="3" align="center">50</td>
+          </tr>
+          <tr><th colspan="4">Трансмиссия</th></tr>
+          <tr><th>Тип трансмиссии</th>
+            <td align="center">5МТ</td>
+            <td align="center">5МТ</td>
+            <td align="center">5AМТ</td>
+          </tr>
+          <tr><th>Передаточное число главной пары</th>
+            <td colspan="3" align="center">3,7</td>
+          </tr>
+          <tr><th colspan="4">Подвеска</th></tr>
+          <tr><th>Передняя</th>
+            <td colspan="3" align="center">независимая, пружинная, типа Макферсон, со стабилизатором поперечной устойчивости</td>
+          </tr>
+          <tr><th>Задняя</th>
+            <td colspan="3" align="center">полузависимая, пружинная, рычажная, с гидравлическими газонаполненными телескопическими амортизаторами</td>
+          </tr>
+          <tr><th colspan="4">Рулевое управление</th></tr>
+          <tr><th>Рулевой механизм</th>
+            <td colspan="3" align="center">рулевой механизм типа "шестерня-рейка" с электромеханическим усилителем</td>
+          </tr>
+          <tr><th colspan="4">Шины</th></tr>
+          <tr><th>Размерность</th>
+            <td align="center">175/65 R14 (82, H);<br> 185/60 R14 (82, Н)</td>
+            <td align="center">175/65 R14 (82, H);<br> 185/60 R14 (82, Н);<br> 185/55 R15 (Н/V)</td>
+            <td align="center">175/65 R14 (82, H);<br> 185/60 R14 (82, Н);<br> 185/55 R15 (Н/V)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+              <%= image_tag(image_path('pages/'+@car+'/colors/lednik.png'), class: 'carinfoimg thumbnail opaque')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/portvein.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/ledyanoi.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/persei.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/borneo.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/blackzem.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/platina.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/koriandr.png'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #FFFFFF; color: #0b0b0b">Ледниковый (221)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #5A0022; color: #ffffff">Портвейн (192)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #A5B9BE; color: #ffffff">Ледяной (413)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #142A6E; color: #ffffff">Персей (429)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #444E4E; color: #ffffff">Борнео (633)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #1c1d1a; color: #ffffff">Черная жемчужина (676)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #c3c4c4; color: #ffffff">Платина (691)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #898664; color: #ffffff">Кориандр (790)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

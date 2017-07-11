@@ -1,0 +1,339 @@
+<% @car = 'largus7mestcross'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+      <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">LARGUS, УНИВЕРСАЛ, ДЛЯ СЕМЬИ</span></p>
+      <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+              <%= image_tag(image_path('pages/'+@car+'/p2.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">СТИЛЬ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA Largus Cross – ожидаемое развитие самого продаваемого на российском авторынке универсала LADA Largus.
+                  Вместительность (5- и 7-местное исполнение), надежная подвеска, тяговитый двигатель –
+                  все это при самой выгодной цене в своем классе обеспечило семейству популярность у покупателей.
+                </p>
+                <p class="carinfo">
+                  LADA Largus Cross добавляет к этим преимуществам неоспоримые для российских условий качества –
+                  увеличенный дорожный просвет и, как следствие, лучшую проходимость. LADA Largus Cross станет незаменимым помощником для семей,
+                  предпочитающих отдых на природе и активно использующих для этих целей автомобиль. Комфорт и вместительность
+                  пассажирского универсала с повышенной проходимостью обеспечат его владельцам удобство и уверенность в поездках с семьей,
+                  компанией друзей на дачу или на пикник.
+                </p>
+                <p class="carinfo">
+                  Все преимущества новой модификации популярного универсала по достоинству смогут оценить и
+                  представители малого бизнеса. Клиенты смогут заказать этот автомобиль в нужном для них цвете.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">ЭКСТЕРЬЕР</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA Largus Cross отличается от уже известного универсала более агрессивным дизайном.
+                  Его особенности – увеличенный дорожный просвет, защитные пластиковые накладки на переднем и заднем бамперах,
+                  арках колес и порогах, бампера с тиснением без окраски, оклеенные пленкой рамки дверей, легкосплавные диски колёс
+                  диаметром 16 дюймов с шинами увеличенной размерности.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p4.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p3.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ИНТЕРЬЕР</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  При сохранении прежней функциональности салона пассажирского универсала интерьер LADA Largus Cross
+                  получил немало оригинальности за счет яркой расцветки. В спинках передних кресел применены оранжевые
+                  кожаные вставки в плечевой зоне. Такого же цвета клетка и декоративная отстрочка швов служат орнаментом для всех сидений.
+                  Оранжевые кожаные вставки использованы и в обивке дверей. Элементы того же цвета органично вписаны в накладку центральной консоли.
+                  Надпись «Largus Cross» в пластиковой вставке на пороге – фирменный штрих обновленного универсала.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/largus/cross5/print_prices.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <tbody>
+          </tbody><thead>
+        <tr><th>Двигатель, трансмиссия</th>
+          <td align="center"><strong>1,6 л 16-кл., 5МТ, 105 л.с.</strong></td>
+        </tr>
+        </thead>
+          <tbody><tr><th colspan="2">Кузов</th></tr>
+          <tr><th>Колесная формула / ведущие колеса</th>
+            <td align="center">4 х 2 / передние</td>
+          </tr>
+          <tr><th>Расположение двигателя</th>
+            <td align="center">переднее поперечное</td>
+          </tr>
+          <tr><th>Тип кузова / количество дверей</th>
+            <td align="center">универсал / 5</td>
+          </tr>
+          <tr><th>Длина / ширина / высота, мм</th>
+            <td align="center">4470 / 1756 / 1654</td>
+          </tr>
+          <tr><th>База, мм</th>
+            <td align="center">2905</td>
+          </tr>
+          <tr><th>Колея передних / задних колес, мм</th>
+            <td align="center">1461 / 1466</td>
+          </tr>
+          <tr><th>Дорожный просвет, мм</th>
+            <td align="center">170</td>
+          </tr>
+          <tr><th>Объем багажного отделения в пассажирском / грузовом вариантах, л</th>
+            <td align="center">560 / 2350</td>
+          </tr>
+          <tr><th colspan="2">Двигатель</th></tr>
+          <tr><th>Тип двигателя</th>
+            <td align="center">бензиновый</td>
+          </tr>
+          <tr><th>Система питания</th>
+            <td align="center">распределенный впрыск топлива с электронным управлением</td>
+          </tr>
+          <tr><th>Количество, расположение цилиндров</th>
+            <td align="center">4, рядное</td>
+          </tr>
+          <tr><th>Рабочий объем, куб. см</th>
+            <td align="center">1598</td>
+          </tr>
+          <tr><th>Максимальная мощность, л.с. / кВт / об. мин.</th>
+            <td align="center">105 / 77 / 5750</td>
+          </tr>
+          <tr><th>Максимальный крутящий момент, Нм / об. мин.</th>
+            <td align="center">148 / 3750</td>
+          </tr>
+          <tr><th>Топливо</th>
+            <td align="center">бензин с октановым числом не менее 95</td>
+          </tr>
+          <tr><th colspan="2">Динамические характеристики</th></tr>
+          <tr><th>Максимальная скорость, км/ч</th>
+            <td align="center">165</td>
+          </tr>
+          <tr><th>Время разгона 0-100 км/ч, с</th>
+            <td align="center">13,1</td>
+          </tr>
+          <tr><th colspan="2">Расход топлива</th></tr>
+          <tr><th>Городской цикл, л/100 км</th>
+            <td align="center">11,5</td>
+          </tr>
+          <tr><th>Загородный цикл, л/100 км</th>
+            <td align="center">7,5</td>
+          </tr>
+          <tr><th>Смешанный цикл, л/100 км</th>
+            <td align="center">9,0</td>
+          </tr>
+          <tr><th colspan="2">Масса</th></tr>
+          <tr><th>Снаряженная масса, кг</th>
+            <td align="center">1260...1345</td>
+          </tr>
+          <tr><th>Полная масса, кг</th>
+            <td align="center">1705...1790</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа с тормозами, кг</th>
+            <td align="center">1300</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа без тормозов, кг</th>
+            <td align="center">650</td>
+          </tr>
+          <tr><th>Объем топливного бака, л</th>
+            <td align="center">50</td>
+          </tr>
+          <tr><th colspan="2">Трансмиссия</th></tr>
+          <tr><th>Тип трансмиссии</th>
+            <td align="center">5МТ</td>
+          </tr>
+          <tr><th>Передаточное число главной пары</th>
+            <td align="center">4,2</td>
+          </tr>
+          <tr><th colspan="2">Подвеска</th></tr>
+          <tr><th>Передняя</th>
+            <td align="center">независимая, пружинная, типа Макферсон, со стабилизатором поперечной устойчивости</td>
+          </tr>
+          <tr><th>Задняя</th>
+            <td align="center">полузависимая, пружинная, рычажная, с гидравлическими газонаполненными телескопическими амортизаторами</td>
+          </tr>
+          <tr><th colspan="2">Рулевое управление</th></tr>
+          <tr><th>Рулевой механизм</th>
+            <td align="center">рулевой механизм типа "шестерня-рейка" с электромеханическим усилителем</td>
+          </tr>
+          <tr><th colspan="2">Шины</th></tr>
+          <tr><th>Размерность</th>
+            <td align="center">205/55 R16 (91 H/V)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+              <%= image_tag(image_path('pages/'+@car+'/colors/lednik.png'), class: 'carinfoimg thumbnail opaque')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/fire.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/venera.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/greybazalt.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/kashemir.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/diplomat.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/blackzem.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/platina.png'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #ffffff; color: #0b0b0b">Ледниковый (221)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #DA0F23; color: #ffffff">Огненно-красный (124)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #600108; color: #ffffff">Венера (191)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #A8B9A0; color: #ffffff">Серый базальт (242)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #311500; color: #ffffff">Кашемир (283)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #003A60; color: #ffffff">Дипломат (424)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #1c1d1a; color: #ffffff">Черная жемчужина (676)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #c3c4c4; color: #ffffff">Платина (691)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

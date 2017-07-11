@@ -1,0 +1,441 @@
+<% @car = 'xraycross'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+      <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">XRAY, УДОБНАЯ, ВЫСОКАЯ, ДЛЯ ТЕБЯ</span></p>
+      <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ЭТО LADA XRAY</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Компактный – но солидный, высокий – но динамичный.
+                  Рельефная поверхность крыльев и дверей подчеркивает динамичный стиль уверенного в себе кроссовера.
+                </p>
+                <p class="carinfo">
+                  Автомобиль с развитой «мускулатурой» преуспевает во всех дисциплинах: скоростная поездка по трассе,
+                  маневрирование в тесноте города, уверенное движение по грунту, снегу и неровностям урбанистического пейзажа.
+                </p>
+                <p class="carinfo">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">АВТОМОБИЛЬ - МОЙ ВТОРОЙ ДОМ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA XRAY создан по принципу «Автомобиль – мой второй дом»: интерьер машины комфортен и рационален.
+                </p>
+                В салоне – набор ниш и подстаканников, карманы в обивках дверей, выдвижной контейнер под передним пассажирским сиденьем,
+                охлаждаемый перчаточный ящик. В багажнике – крепления для сетки, пластиковые ниши за арками задних колес.
+                Двойной пол в багажном отделении при сложенных задних сиденьях образует ровную площадку – это значительно облегчает
+                транспортировку вещей всех форм и размеров. Заднее сиденье складывается в пропорции 60/40, что позволяет при необходимости перевозить габаритный груз.
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p2.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p3.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ДИНАМИКА И КОМФОРТ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  LADA XRAY – это комфортная и высокая посадка, особенно удобная в городе и на легком бездорожье,
+                  динамичный мотор, острая управляемость, хорошая шумоизоляция.
+                </p>
+                <p class="carinfo">
+                  Подвеска автомобиля настроена на активное маневрирование:
+                  газонаполненные амортизаторы и передний подрамник обеспечивают отличный контроль над дорогой. Высокий внедорожный клиренс вместе с
+                  энергоемким, беспробойным шасси гарантируют отличную проходимость.
+                </p>
+                <p class="carinfo">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">АКТИВНАЯ БЕЗОПАСНОСТЬ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">За активную безопасность автомобиля отвечает функция курсовой устойчивости ESC.
+                  Интеллектуальная система предотвращает занос автомобиля и включает ряд необходимых опций безопасности:
+                </p>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">антиблокировочная система тормозов (ABS): в случае экстренного торможения сохраняет управляемость автомобиля;</li>
+                  <li style="text-align: justify;">усилитель экстренного торможения (BAS): при резком нажатии на педаль тормоза система автоматически повышает давление в тормозной магистрали, максимально эффективно замедляя автомобиль;</li>
+                  <li style="text-align: justify;">противобуксовочная система (TCS): обеспечивает динамичный старт на скользком или неоднородном покрытии, а в случае пробуксовки одного из колес система выполняет функцию блокировки дифференциала;</li>
+                  <li style="text-align: justify;">система распределения тормозных усилий (EBD): оптимально делит усилия между осями, предотвращая занос.</li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p4.jpg'), class: 'carinfoimg thumbnail')%>
+
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p6.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ПОДГОТОВЛЕН К СУРОВЫМ УСЛОВИЯМ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">Двусторонняя оцинковка наружных панелей кузова;</li>
+                  <li style="text-align: justify;">Антикор днища и скрытых полостей кузова;</li>
+                  <li style="text-align: justify;">Увеличенный до 195 мм дорожный просвет;</li>
+                  <li style="text-align: justify;">Энергоемкая подвеска;</li>
+                  <li style="text-align: justify;">Шины с высотой профиля, оптимальной как на асфальте, так и на грунте;</li>
+                  <li style="text-align: justify;">Эффективный воздушный фильтр салона;</li>
+                  <li style="text-align: justify;">Двигатель Альянса H4 адаптирован к российским условиям для Уверенного запуска в сильный мороз;</li>
+                  <li style="text-align: justify;">Проверенная временем платформа B0 – это надежное шасси, Отработанная электроника, тщательно просчитанные силовые элементы кузова;</li>
+                  <li style="text-align: justify;">Пластиковая облицовка и резиновые уплотнители порогов: Надежная изоляция от загрязнений.</li>
+                </ul>
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/xray/hatchback/print_tth.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <tbody>
+          </tbody><thead>
+        <tr><th>Двигатель, трансмиссия</th>
+          <td align="center"><b>1,6 л 16-кл., 5МТ, 106 л.с.</b></td>
+          <td align="center"><b>1,6 л 16-кл., 5МТ, 110 л.с.</b></td>
+          <td align="center"><b>1,8 л 16-кл., 5АМТ, 122 л.с.</b></td>
+        </tr>
+        </thead>
+          <tbody><tr><th colspan="4">Кузов</th></tr>
+          <tr>
+            <td>Колесная формула / ведущие колеса</td>
+            <td colspan="3" align="center">4 х 2 / передние</td>
+          </tr>
+          <tr>
+            <td>Расположение двигателя</td>
+            <td colspan="3" align="center">переднее поперечное</td>
+          </tr>
+          <tr>
+            <td>Тип кузова / количество дверей</td>
+            <td colspan="3" align="center">кроссовер / 5</td>
+          </tr>
+          <tr>
+            <td>Количество мест</td>
+            <td colspan="3" align="center">2+3</td>
+          </tr>
+          <tr>
+            <td>Длина / ширина / высота, мм</td>
+            <td colspan="3" align="center">4165 / 1764 / 1570</td>
+          </tr>
+          <tr>
+            <td>База, мм</td>
+            <td colspan="3" align="center">2592</td>
+          </tr>
+          <tr>
+            <td>Колея передних / задних колес, мм</td>
+            <td colspan="3" align="center">1484...1492 / 1524...1532</td>
+          </tr>
+          <tr>
+            <td>Дорожный просвет, мм</td>
+            <td colspan="3" align="center">195</td>
+          </tr>
+          <tr>
+            <td>Объем багажного отделения в пассажирском / грузовом вариантах, л</td>
+            <td colspan="3" align="center">361/1207</td>
+          </tr>
+          <tr><th colspan="4">Двигатель</th></tr>
+          <tr>
+            <td>Тип двигателя</td>
+            <td colspan="3" align="center">бензиновый</td>
+          </tr>
+          <tr>
+            <td>Система питания</td>
+            <td colspan="3" align="center">впрыск топлива с электронным управлением</td>
+          </tr>
+          <tr>
+            <td>Количество, расположение цилиндров</td>
+            <td colspan="3" align="center">4, рядное</td>
+          </tr>
+          <tr>
+            <td>Рабочий объем, куб. см</td>
+            <td align="center">1596</td>
+            <td align="center">1598</td>
+            <td align="center">1774</td>
+          </tr>
+          <tr>
+            <td>Максимальная мощность, л.с. / кВт / об. мин.</td>
+            <td align="center">106 / 78 / 5800</td>
+            <td align="center">110 / 81 / 5500</td>
+            <td align="center">122 / 90 / 6050</td>
+          </tr>
+          <tr>
+            <td>Максимальный крутящий момент, Нм / об. мин.</td>
+            <td align="center">148 / 4200</td>
+            <td align="center">150 / 4000</td>
+            <td align="center">170 / 3750</td>
+          </tr>
+          <tr>
+            <td>Топливо</td>
+            <td colspan="3" align="center">&gt;бензин, min 95</td>
+          </tr>
+          <tr><th colspan="4">Динамические характеристики</th></tr>
+          <tr>
+            <td>Максимальная скорость, км/ч</td>
+            <td align="center">176</td>
+            <td align="center">181</td>
+            <td align="center">186</td>
+          </tr>
+          <tr>
+            <td>Время разгона 0-100 км/ч, с</td>
+            <td align="center">11,4</td>
+            <td align="center">11,1</td>
+            <td align="center">10,9</td>
+          </tr>
+          <tr><th colspan="4">Расход топлива</th></tr>
+          <tr>
+            <td>Городской цикл, л/100 км</td>
+            <td align="center">9,3</td>
+            <td align="center">8,9</td>
+            <td align="center">8,6</td>
+          </tr>
+          <tr>
+            <td>Загородный цикл, л/100 км</td>
+            <td align="center">5,9</td>
+            <td align="center">5,6</td>
+            <td align="center">5,8</td>
+          </tr>
+          <tr>
+            <td>Смешанный цикл, л/100 км</td>
+            <td align="center">7,2</td>
+            <td align="center">6,8</td>
+            <td align="center">6,8</td>
+          </tr>
+          <tr><th colspan="4">Масса</th></tr>
+          <tr>
+            <td>Снаряженная масса, кг</td>
+            <td colspan="3" align="center">1190...1250</td>
+          </tr>
+          <tr>
+            <td>Технически допустимая максимальная масса, кг</td>
+            <td colspan="3" align="center">1650</td>
+          </tr>
+          <tr>
+            <td>Максимальная масса прицепа без тормозной системы, кг</td>
+            <td colspan="3" align="center">600</td>
+          </tr>
+          <tr>
+            <td>Максимальная масса прицепа с тормозной системой, кг</td>
+            <td colspan="3" align="center">800</td>
+          </tr>
+          <tr>
+            <td>Объем топливного бака, л</td>
+            <td colspan="3" align="center">50</td>
+          </tr>
+          <tr><th colspan="4">Трансмиссия</th></tr>
+          <tr>
+            <td>Тип трансмиссии</td>
+            <td align="center">5МТ</td>
+            <td align="center">&gt;5МТ</td>
+            <td align="center">&gt;5АМТ</td>
+          </tr>
+          <tr>
+            <td>Передаточное число главной передачи</td>
+            <td align="center">4,5</td>
+            <td align="center">4,4</td>
+            <td align="center">3,9</td>
+          </tr>
+          <tr><th colspan="4">Подвеска</th></tr>
+          <tr>
+            <td>Передняя</td>
+            <td colspan="3" align="center">независимая, типа Макферсон, пружинная, с гидравлическими или газонаполненными телескопическими амортизаторами, со стабилизатором поперечной устойчивости</td>
+          </tr>
+          <tr>
+            <td>Задняя</td>
+            <td colspan="3" align="center">полузависимая, рычажная, пружинная, с гидравлическими или газонаполненными телескопическими амортизаторами</td>
+          </tr>
+          <tr><th colspan="4">Рулевое управление</th></tr>
+          <tr>
+            <td>Рулевой механизм</td>
+            <td colspan="3" align="center">шестерня-рейка</td>
+          </tr>
+          <tr><th colspan="4">Шины</th></tr>
+          <tr>
+            <td>Размерность</td>
+            <td colspan="3" align="center">205/55 R16 (91, H/V); 195/65 R15 (91, Н)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+              <%= image_tag(image_path('pages/'+@car+'/colors/lednik.png'), class: 'carinfoimg thumbnail opaque')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/serdolik.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/fire.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/greybazalt.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/puma.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/blackzem.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/platina.png'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #ffffff; color: #0b0b0b">Ледниковый (221)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #860e02; color: #ffffff">Сердолик (195)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #DA0F23; color: #ffffff">Огненно-красный (124)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #A8B9A0; color: #ffffff">Серый базальт (242)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #986f59; color: #ffffff">Пума (265)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #1c1d1a; color: #ffffff">Черная жемчужина (676)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #c3c4c4; color: #ffffff">Платина (691)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

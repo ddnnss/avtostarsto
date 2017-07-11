@@ -1,0 +1,145 @@
+<div class="col-md-3 col-sm-3">
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a aria-expanded="true" href="#largus5m" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('largus5m.png'), class: 'verticaltabsimages') %></i> 5 МЕСТ</a></li>
+    <li class=""><a aria-expanded="true" href="#larguscross5m" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('larguscross5m.png'), class: 'verticaltabsimages') %></i> КРОСС 5 МЕСТ</a></li>
+    <li class=""><a aria-expanded="true" href="#largus7m" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('largus7m.png'), class: 'verticaltabsimages') %></i> 7 МЕСТ</a></li>
+    <li class=""><a aria-expanded="true" href="#larguscross7m" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('larguscross7m.png'), class: 'verticaltabsimages') %></i> КРОСС 7 МЕСТ</a></li>
+    <li class=""><a aria-expanded="true" href="#largusfurgon" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('largusfurgon.png'), class: 'verticaltabsimages') %></i> ФУРГОН</a></li>
+  </ul>
+</div>
+<div class="col-md-9 col-sm-9 popover-div-border">
+  <div class="tab-content tab-stacked">
+    <div class="tab-pane fade active in imgshadow" id="largus5m" style="height: 400px; background-image:url(<%= image_path('largus5m.jpg')%>); background-size: cover;">
+
+      <%= link_to "Обзор", model_largus5mest_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />8,2 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>504 500<sup>*</sup>
+        </div>
+
+
+        <!--  <div style="float:left; ">
+          <%= image_tag(image_path('testdrive_ico.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          ДОСТУПЕН<br />ТЕСТ-ДРАЙВ
+        </div>-->
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="larguscross5m" style="height: 400px; background-image:url(<%= image_path('larguscross5m.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_largus5mestcross_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,0 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>634 200<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="largus7m" style="height: 400px; background-image:url(<%= image_path('largus7m.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_largus7mest_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />8,2 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>570 000<sup>*</sup>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="larguscross7m" style="height: 400px; background-image:url(<%= image_path('larguscross7m.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_largus7mestcross_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />9,0 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>659 200<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="largusfurgon" style="height: 400px; background-image:url(<%= image_path('largusfurgon.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_largusfurgon_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />8,2 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>479 900<sup>*</sup>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

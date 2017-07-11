@@ -1,0 +1,92 @@
+<div class="col-md-3 col-sm-3">
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a aria-expanded="true" href="#grantasedan" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('grantasedan.png'), class: 'verticaltabsimages') %></i> СЕДАН</a></li>
+    <li class=""><a aria-expanded="true" href="#grantalift" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('grantaliftback.png'), class: 'verticaltabsimages') %></i> ЛИФТБЕК</a></li>
+    <li class=""><a aria-expanded="true" href="#grantasport" role="tab" data-toggle="tab"><i > <%= image_tag(image_path('grantasport.png'), class: 'verticaltabsimages') %></i> СПОРТ</a></li>
+  </ul>
+</div>
+<div class="col-md-9 col-sm-9 popover-div-border">
+  <div class="tab-content tab-stacked">
+    <div class="tab-pane fade active in imgshadow" id="grantasedan" style="height: 400px; background-image:url(<%= image_path('grantasedan.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_grantasedan_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />7,0 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>303 900<sup>*</sup>
+        </div>
+
+
+        <!--  <div style="float:left; ">
+          <%= image_tag(image_path('testdrive_ico.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          ДОСТУПЕН<br />ТЕСТ-ДРАЙВ
+        </div>-->
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="grantalift" style="height: 400px; background-image:url(<%= image_path('grantaliftback.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_grantaliftback_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />7,0 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>364 200<sup>*</sup>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="tab-pane fade  in imgshadow" id="grantasport" style="height: 400px; background-image:url(<%= image_path('grantasport.jpg')%>); background-size: cover;">
+
+
+      <%= link_to "Обзор", model_grantasport_path,  :class=>"btn btn-warning popover-btn2" %>
+
+
+      <div class="popover-div-size">
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo1.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          расход<br />7,8 <sub>л/100км</sub>
+        </div>
+
+        <div style="float:left; ">
+          <%= image_tag(image_path('carinfo2.png'), class: 'popover-icons')%>
+        </div>
+        <div class="popover-div">
+          цена, от<br /><i class="fa fa-rub"></i>461 000<sup>*</sup>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

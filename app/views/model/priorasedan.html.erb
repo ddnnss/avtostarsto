@@ -1,0 +1,366 @@
+<% @car = 'priorasedan'%>
+<section class="hero-unit hero-fullwidth fullwidth-image-solid hero-rotating-words" style="background-image:url(<%= image_path('pages/'+@car+'/head.jpg')%>)">
+  <div class="hero-content">
+    <div class="container herounitbg">
+      <p class="lead margin-top-30">LADA<span id="rotating-words" class="rotating-words maincl">PRIORA, ДРАЙВ, СТИЛЬ</span></p>
+      <!--  <a href="#" class="btn btn-primary btn-lg">PURCHASE</a> <a href="#" class="btn btn-default btn-lg">LEARN MORE</a> -->
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="custom-tabs-line tabs-line-bottom margin-top-30">
+      <ul class="nav" role="tablist" style="font-size: 20px;">
+        <li class="active"><a aria-expanded="true" href="#review" role="tab" data-toggle="tab">ОБЗОР</a></li>
+        <li class=""><a aria-expanded="false" href="#tech-review" role="tab" data-toggle="tab">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+        <li class=""><a aria-expanded="false" href="#colors" role="tab" data-toggle="tab">ВАРИАНТЫ ЦВЕТОВ</a></li>
+        <li><a href="#gallery" role="tab" data-toggle="tab">ФОТОГАЛЕРЕЯ</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="review">
+        <section class="no-padding-top">
+          <div class="margin-top-30"></div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p1.png'), class: 'carinfoimg ')%>
+              <%= image_tag(image_path('pages/'+@car+'/p2.png'), class: 'carinfoimg ')%>
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">ДИЗАЙН</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Стиль LADA Priora – лаконичный, простой, но запоминающийся – призван говорить о статусе владельца.
+                  Это стиль людей состоявшихся, твердо знающих, что им нужно от жизни. Стиль немного консервативный,
+                  берущий от современной моды только самые элегантные идеи. Яркая светотехника, оригинальная сотовая структура решетки
+                  радиатора и ее хромированная окантовка формируют узнаваемый облик динамичного современного автомобиля.
+                </p>
+                <p class="carinfo">
+                  Задний бампер LADA Priora стал более стильным и функциональным. Нижняя, загрязняемая и подверженная повреждениям часть
+                  бампера – черная, окрашена в массе, а верхняя часть по-прежнему окрашивается в цвет кузова. При этом достигается эффект
+                  цельного дизайнерского решения – темная зона идет по всему нижнему контуру автомобиля (передний бампер, облицовка порогов пола, задний бампер).
+                </p>
+                <p class="carinfo">
+                  Инновационный материал soft-look для панели приборов и обивок дверей преображает салон LADA Priora. На обивках дверей –
+                  специально разработанный для автомобилей Priora новый рисунок тиснения «тайга». Черный лак – тенденция современной автомобильной моды.
+                  Небольшие, но заметные вкрапления хрома подчеркивают солидность интерьера и статус владельца.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left " >
+              <div class="content">
+                <h3 class="name heading-border-left  border-primary ">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                <ul>
+                  <li style="text-align: justify;">Улучшенная аэродинамика заднего бампера дольше сохраняет чистыми датчики парктроника.</li>
+                  <li style="text-align: justify;">Жидкокристаллический дисплей с сенсорным управлением по типу смартфонов. Выполняет функции мультимедиа-системы и русифицированного бортового компьютера.</li>
+                  <li style="text-align: justify;">Подрулевые переключатели: новый дизайн и возможность программирования системы «круиз-контроль» и «ограничение скорости».</li>
+                  <li style="text-align: justify;">Выключатели обогрева передних сидений позволяют регулировать обогрев в трех диапазонах.</li>
+                  <li style="text-align: justify;">Блок освещения салона с функцией «вежливого света».</li>
+                  <li style="text-align: justify;">Блок управления климатической системой – высокая четкость регулировок при минимальном усилии на рукоятках.</li>
+                  <li style="text-align: justify;">Датчик дождя автоматически включает стеклоочистители. Это удобно в дождь, но особенно помогает эта функция, когда в слякотную погоду ваш автомобиль окатывают водой соседние машины.</li>
+                  <li style="text-align: justify;">Наружные зеркала: широкая отражающая поверхность, светодиодные повторители сигналов поворота.</li>
+                  <li style="text-align: justify;">Дистанционный привод замков крышки багажника или двери задка.</li>
+                  <li style="text-align: justify;">Подсветка мест входа-выхода.</li>
+                  <li style="text-align: justify;">Предпусковой подогреватель – опция для северных регионов – повышает ресурс мотора, снижает расход топлива… и облегчает жизнь водителя.</li>
+                </ul>
+                </p>
+
+              </div>
+            </div>
+            <div class="col-md-6 right">
+              <%= image_tag(image_path('pages/'+@car+'/p2.jpg'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/p3.jpg'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6 left container" >
+              <%= image_tag(image_path('pages/'+@car+'/p4.jpg'), class: 'carinfoimg thumbnail')%>
+
+            </div>
+            <div class="col-md-6 right">
+              <div class="content">
+                <h3 class="name heading-border-left border-primary">СТРАСТЬ ДВИЖЕНИЯ</h3>
+                <div class="margin-top-30"></div>
+                <p class="carinfo">
+                  Вместе с обновленным салоном и экстерьером LADA Priora получила модернизированный 106-сильный двигатель с
+                  принципиально новой системой впуска. Технология динамического наддува улучшает динамику разгона, повышает эластичность двигателя.
+                  Это обеспечивает более комфортные условия при трогании с места и маневрировании в городе.
+                </p>
+                <p class="carinfo">
+                  При этом расход топлива не увеличивается.
+                  Любители энергичной езды оценят более мощный электромеханический усилитель и рулевой механизм с укороченным передаточным числом (3,1 вместо 3,9).
+                  Подвеска LADA Priora получила новые эластичные буферы сжатия, дающие ощущение по-европейски собранного шасси.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech-review">
+        <div class="row ">
+          <div class="col-md-6 left " >
+            <%= image_tag(image_path('pages/'+@car+'/char1.jpg'))%>
+          </div>
+          <div class="col-md-6 right">
+            <%= image_tag(image_path('pages/'+@car+'/char2.jpg'))%>
+          </div>
+        </div>
+        <p>
+          <a href="http://www.lada.ru/cars/priora/sedan/print_prices.pdf"><i class="fa fa-print"></i> Версия для печати</a>
+        </p>
+        <table class="table table-bordered table-hover">
+          <tbody>
+          </tbody><thead>
+        <tr><th>Модификация</th>
+          <td align="center"><strong>1,6 л. 8-кл. (Евро-4)</strong></td>
+          <td align="center"><strong>1,6 л. 16-кл. (Евро-4)</strong></td>
+        </tr>
+        </thead>
+          <tbody><tr><th>Длина, мм</th>
+            <td align="center">4350</td>
+            <td align="center">4350</td>
+          </tr>
+          <tr><th>Ширина, мм</th>
+            <td align="center">1680</td>
+            <td align="center">1680</td>
+          </tr>
+          <tr><th>Высота, мм</th>
+            <td align="center">1420</td>
+            <td align="center">1420</td>
+          </tr>
+          <tr><th>База, мм</th>
+            <td align="center">2492</td>
+            <td align="center">2492</td>
+          </tr>
+          <tr><th>Колея передних колес, мм</th>
+            <td align="center">1410</td>
+            <td align="center">1410</td>
+          </tr>
+          <tr><th>Колея задних колес, мм</th>
+            <td align="center">1380</td>
+            <td align="center">1380</td>
+          </tr>
+          <tr><th>Объем багажного отделения, куб. дм.</th>
+            <td align="center">430</td>
+            <td align="center">430</td>
+          </tr>
+          <tr><th>Масса в снаряженном состоянии, кг</th>
+            <td align="center">1163</td>
+            <td align="center">1163</td>
+          </tr>
+          <tr><th>Полная масса автомобиля, кг</th>
+            <td align="center">1578</td>
+            <td align="center">1578</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа с тормозами, кг</th>
+            <td align="center">800</td>
+            <td align="center">800</td>
+          </tr>
+          <tr><th>Допустимая полная масса буксируемого прицепа без тормозов, кг</th>
+            <td align="center">500</td>
+            <td align="center">500</td>
+          </tr>
+          <tr><th>Колесная формула / ведущие колеса</th>
+            <td align="center">4 х 2 / передние</td>
+            <td align="center">4 х 2 / передние</td>
+          </tr>
+          <tr><th>Компоновочная схема автомобиля</th>
+            <td align="center">переднеприводная, расположение двигателя переднее, поперечнее</td>
+            <td align="center">переднеприводная, расположение двигателя переднее, поперечное</td>
+          </tr>
+          <tr><th>Тип кузова / количество дверей</th>
+            <td align="center">седан / 4</td>
+            <td align="center">седан / 4</td>
+          </tr>
+          <tr><th>Тип двигателя</th>
+            <td align="center">четырехтактный, бензиновый</td>
+            <td align="center">четырехтактный, бензиновый</td>
+          </tr>
+          <tr><th>Система питания</th>
+            <td align="center">распределенный впрыск с электронным управлением</td>
+            <td align="center">распределенный впрыск с электронным управлением</td>
+          </tr>
+          <tr><th>Количество и расположение цилиндров</th>
+            <td align="center">4, рядное</td>
+            <td align="center">4, рядное</td>
+          </tr>
+          <tr><th>Рабочий объём двигателя, куб. см</th>
+            <td align="center">1596</td>
+            <td align="center">1596</td>
+          </tr>
+          <tr><th>Максимальная мощность, кВт / об.мин.</th>
+            <td align="center">64 / 5100</td>
+            <td align="center">72 / 5600</td>
+          </tr>
+          <tr><th>Максимальный крутящий момент, Нм при об/мин</th>
+            <td align="center">140 / 3800</td>
+            <td align="center">145 / 4000</td>
+          </tr>
+          <tr><th>Топливо</th>
+            <td align="center">неэтилированный бензин АИ-95 (min)</td>
+            <td align="center">неэтилированный бензин АИ-95 (min)</td>
+          </tr>
+          <tr><th>Расход топлива по ездовому циклу, л/100 км</th>
+            <td align="center">7,3</td>
+            <td align="center">7,2</td>
+          </tr>
+          <tr><th>Максимальная скорость, км/ч</th>
+            <td align="center">176</td>
+            <td align="center">183</td>
+          </tr>
+          <tr><th>Коробка передач</th>
+            <td align="center">механическая</td>
+            <td align="center">механическая</td>
+          </tr>
+          <tr><th>Число передач</th>
+            <td align="center">5 вперед, 1 назад</td>
+            <td align="center">5 вперед, 1 назад</td>
+          </tr>
+          <tr><th>Передаточное число главной пары</th>
+            <td align="center">3,7</td>
+            <td align="center">3,7</td>
+          </tr>
+          <tr><th>Рулевое управление</th>
+            <td align="center">рулевой механизм типа "шестерня-рейка", без усилителя</td>
+            <td align="center">рулевой механизм типа "шестерня-рейка"</td>
+          </tr>
+          <tr><th>Шины</th>
+            <td align="center">175/65 R14 (82, Н); 185/60 R14 (82, Н); 185/65 R14 (86, Н)</td>
+            <td align="center">175/65 R14 (82, H); 185/60 R14 (82, H); 185/65 R14 (86, H)</td>
+          </tr>
+          <tr><th>Емкость топливного бака, л</th>
+            <td align="center">43</td>
+            <td align="center">43</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="tab-pane fade" id="colors">
+        <div class="row margin-top-30 ">
+          <div class="col-md-9 left container" >
+            <div id="cf7" class="shadow">
+              <%= image_tag(image_path('pages/'+@car+'/colors/oblako.png'), class: 'carinfoimg thumbnail opaque')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/plamya.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/borneo.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/pantera.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/snow.png'), class: 'carinfoimg thumbnail')%>
+              <%= image_tag(image_path('pages/'+@car+'/colors/koriandr.png'), class: 'carinfoimg thumbnail')%>
+            </div>
+          </div>
+          <div class="col-md-3 right">
+            <p id="cf7_controls">
+              <span class="selected thumbnail margin-bottom-10" style="background-color: #FEFAF4; color: #0b0b0b">Белое облако (240)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #D1001C; color: #ffffff">Пламя (193)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #444E4E; color: #ffffff">Борнео (633)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #161313; color: #ffffff">Пантера (672)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #D0D8E2; color: #000">Снежная королева (690)</span>
+              <span class="thumbnail margin-bottom-10" style="background-color: #898664; color: #ffffff">Кориандр (790)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gallery">
+        <div class="row gallery-magnific margin-top-30">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/1.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/1.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/2.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/2.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/3.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/3.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/4.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/4.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/5.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/5.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/6.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/6.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-magnific">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/7.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/7.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/8.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/8.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail thumbnail-hover thumbnail-no-border">
+              <a href="  <%= image_path('pages/'+@car+'/gall/9.jpg')%>">
+                <span class="overlay"></span>
+                <%= image_tag(image_path('pages/'+@car+'/gall/9.jpg'),class: 'carinfoimg thumbnail')%>
+                <span class="thumbnail-icon"><i class="fa fa-search-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

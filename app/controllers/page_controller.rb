@@ -136,7 +136,26 @@ class PageController < ApplicationController
 
   def contact
     @phone = params[:phone]
+
+
+    if session[:sms] == 'send'
+      flash[:smssend]  = 'но Вы уже отправляли запрос'
+      redirect_to '/' and return
+    end
+    require 'net/http'
+
+    uri = URI('http://smsc.ru/sys/send.php?login=avtostar&psw=avtostar777&phones=+79614799760&mes=' + params[:phone].to_s)
+    Net::HTTP.get(uri)
+
+    flash[:smssend]  = 'ожидайте звонка оператора.'
+    session[:sms] = 'send'
     UserMailer.activation(@phone).deliver_now
+
+    redirect_to '/'
+
+  end
+
+  def order
 
   end
 end
