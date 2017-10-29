@@ -19,6 +19,9 @@
 
 //= require jquery.easing
 //= require flex-slider
+//= require isotope.pkgd.min
+//= require imagesloaded.pkgd.min
+
 //= require jquery.flexslider
 //= require morphext
 //= require owl.carousel

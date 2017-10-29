@@ -1,0 +1,2 @@
+class Ladadetal < ApplicationRecord
+end

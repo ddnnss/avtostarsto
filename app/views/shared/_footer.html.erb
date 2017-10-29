@@ -51,4 +51,38 @@
       </nav>
     </div>
   </div>
+  <div id="small-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;">
+    <div class="modal-dialog modal-lg" role="document" style="top: 15%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel2">Оставьте Ваш номер и мы перезвоним</h4>
+        </div>
+        <div class="modal-body">
+
+          <%= form_tag (contact_path)  do %>
+
+              <div class="input-group input-group-lg">
+                <input placeholder="Ваш телефон" required="required"   style="font-size: 30px;" class="form-control" data-mask="+7(999)999-99-99" type="text" name="phone">
+                <span class="input-group-btn"> <%= submit_tag 'Жду звонка' , class:'btn btn-primary btn-lg center-block'%></span>
+                </span>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label class="fancy-checkbox">
+                      <input type="checkbox" required="required">
+                      <span style="font-size: 14px;
+                          font-weight: bold;">Я даю свое согласие на хранение и обработку моих персональных данных.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="alert"></div>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </footer>

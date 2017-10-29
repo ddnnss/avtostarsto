@@ -1,0 +1,128 @@
+
+<div class="page-header has-background-image" style="background-image:url(<%= image_path('pages/services/shops/lphead.jpg')%>); padding: 200px 0; background-position: inherit; ">
+  <div class="overlay"></div>
+  <div class="container">
+
+    <h1 class="page-title toupp">
+      ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ LADA ПО ВЫГОДНЫМ ЦЕНАМ в Пятигорске и кмв
+    </h1>
+
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <div class="row icon-info-group">
+      <div class="col-md-3">
+        <div class="icon-info icon-info-center">
+          <i class="icon "> <%= image_tag(image_path('pages/services/shops/lp1.png')) %></i>
+          <h3 class="title">ГАРАНТИЯ НА ЗАПЧАСТИ</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-info icon-info-center">
+          <i class="icon "> <%= image_tag(image_path('pages/services/shops/lp2.png')) %></i>
+          <h3 class="title">ШИРОКИЙ АССОРТИМЕНТ ОРИГИНАЛЬНЫХ ЗАПЧАСТЕЙ LADA</h3>
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-info icon-info-center">
+          <i class="icon "> <%= image_tag(image_path('pages/services/shops/lp3.png')) %></i>
+          <h3 class="title">НАЛИЧИЕ СТАНЦИИ ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-info icon-info-center">
+          <i class="icon "> <%= image_tag(image_path('pages/services/shops/lp4.png')) %></i>
+          <h3 class="title">КОРОТКИЕ СРОКИ ЗАКАЗА И ПОСТАВКИ ТОВАРА</h3>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row ">
+      <div class="col-md-8 left " >
+        <%= image_tag('pages/services/shops/vaz1.jpg', class: ' thumbnail pagesimg2')%>
+        <%= image_tag('pages/services/shops/vaz2.jpg', class: ' thumbnail pagesimg2')%>
+
+      </div>
+      <div class="col-md-4 right">
+        <div class="content">
+          <h3 class="name heading-border-left border-primary uppercase">магазин автозапчастей ваз</h3>
+          <div class="margin-top-30"></div>
+          <p class="pwin">
+            Магазин оригинальных автозапчастей для автомобилей семейства ВАЗ.
+            Всегда в продаже автозапчасти на весь модельный ряд завода-изготовителя.
+            В наличии кузовные принадлежности, детали двигателя, трансмиссии, подвески, рулевого управления,
+            электрооборудование, оптика, моторные масла мировых производителей, автохимия и многое другое.
+            Продажа автозапчастей ВАЗ осуществляется на территории ЗАО ПФ “Австостар”, слева от автосалона.
+          </p>
+          <p class="pwin">
+            В наличии имеется весь ассортимент запасных частей и расходных материалов для всех моделей LADA и Chevrolet NIVA. Мы
+            предлагаем Вам отличные цены и качественный товар, а также хорошие скидки постоянным покупателям. Кроме того, в нашем магазине
+            для Вас представлена возможность различных форм оплаты автозапчастей. Помните, что используя качественные оригинальные запчасти можно
+            существенно продлить срок службы автомобиля.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <div class="section-heading section-heading-center">
+        <h2 class="heading">АССОРТИМЕНТ</h2>
+        <p class="section-lead">LADADETAL</p>
+      </div>
+      <!-- ITEM FILTERS -->
+      <ul class="list-inline portfolio-item-filters">
+        <li><a class="active" href="#" data-filter="*">ВСЕ</a></li>
+        <li><a href="#" data-filter=".dvi">Двигатель</a></li>
+        <li><a href="#" data-filter=".tra">Трансмиссия</a></li>
+        <li><a href="#" data-filter=".hod">Ходовая часть</a></li>
+        <li><a href="#" data-filter=".sis">Системы управления</a></li>
+        <li><a href="#" data-filter=".ele">Электрооборудование</a></li>
+        <li><a href="#" data-filter=".kuz">Кузовные детали</a></li>
+
+
+      </ul>
+      <!-- END ITEM FILTERS -->
+      <div class="isotope-wrapper">
+        <div class="portfolio-isotope" style="position: relative; height: 1140px;">
+          <ul class="portfolio-3-cols">
+            <% @ld.each do |ld| %>
+            <li class="portfolio-item <%= ld.typ %>" style="position: absolute; left: <%= ld.left %>px; top: <%= ld.top %>px;">
+              <div class="portfolio-simple">
+                <img src="<%= ld.image %>"  class="img-responsive" alt="Portfolio">
+                <div class="info" style="height: 60px;">
+                  <h3 class="title"><%= ld.descr %></h3>
+                  <span><%= ld.descr1 %></span>
+                  <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#small-modal">ЗАКАЗАТЬ</button>
+                </div>
+              </div>
+            </li>
+            <%end%>
+          </ul>
+        </div>
+      </div>
+
+
+    <div class="row margin-top-30">
+
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+

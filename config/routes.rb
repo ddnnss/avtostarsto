@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   get '/shinomontag', to: 'page#shinomontag'
   get '/anticoroziinaya_obrabotka', to: 'page#anticoroziinaya_obrabotka'
   get '/avtomasla_optom', to: 'page#avtomasla'
+  get '/ladadetal', to: 'page#ladaparts'
   get '/avtomasla_shop', to: 'page#avtomaslashop'
   get '/shops', to: 'page#shops'
   get '/otherservice', to: 'page#otherservice'
