@@ -188,7 +188,7 @@
                 <br>
                   <input placeholder="Ваш телефон" required="required"    class="form-control" data-mask="+7(999)999-99-99" type="text" name="phone">
                 <br>
-                <textarea class="form-control" id="contact-message" name="contact-message" rows="5" cols="30" placeholder="Что Вас интересует?"></textarea>
+                <textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Что Вас интересует?"></textarea>
                 <br>
 
 
@@ -225,41 +225,55 @@
          </div>
       </div>
     </div>
-<div class="row margin-top-30">
-  <div class="col-md-9">
-    <h2 class="heading-center heading-border-bottom-short border-primary">Популярные бренды</h2>
-  </div>
+    <div class="section-heading section-heading-center">
+      <h2 class="heading">ПРЕДЛАГАЕМЫЕ БРЕНДЫ</h2>
+      <p class="section-lead">Наличие товара уточняйте у менеджеров</p>
+    </div>
+    <!-- ITEM FILTERS -->
+    <ul class="list-inline portfolio-item-filters">
+      <li><a class="active" href="#" data-filter="*">ВСЕ</a></li>
+      <li><a href="#" data-filter=".otmas">Отечественные масла</a></li>
+      <li><a href="#" data-filter=".immas">Импортные масла</a></li>
+      <li><a href="#" data-filter=".imhim">Импортная химия</a></li>
+      <li><a href="#" data-filter=".othim">Отечественная химия</a></li>
+      <li><a href="#" data-filter=".abro">ABRO</a></li>
+      <li><a href="#" data-filter=".aro">Ароматизаторы</a></li>
+      <li><a href="#" data-filter=".zap">Запасные части</a></li>
+      <li><a href="#" data-filter=".lamp">Автолампы</a></li>
+      <li><a href="#" data-filter=".sve">Свечи зажигания</a></li>
+      <li><a href="#" data-filter=".ohz">Охлаждающие жидкости</a></li>
+      <li><a href="#" data-filter=".fil">Фильтра</a></li>
+      <li><a href="#" data-filter=".spz">Специальные жидкости</a></li>
+      <li><a href="#" data-filter=".torz">Тормозные жидкости</a></li>
+      <li><a href="#" data-filter=".shpat">Шпатлевка</a></li>
+      <li><a href="#" data-filter=".ctek">Щетки стеклоочистителя</a></li>
+      <li><a href="#" data-filter=".raz">Разное</a></li>
 
-  <div class="col-md-3 ">
-    <a href="#" class="btn btn-primary btn-outline" style="
-    left: 150px;
-        position: relative;">показать все</a>
-  </div>
 
-  </div>
-<div id="carousel-images" class="owl-carousel carousel-gap margin-top-30">
-  <div>
-    <img src="<%= image_path('pages/masla/luxoil.png') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/lukoil.png') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/3ton.png') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/agip.png') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/castrol.png') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/consol.jpg') %>" class="img-responsive" alt="Image">
-  </div>
-  <div>
-    <img src="<%= image_path('pages/masla/elf.jpg') %>" class="img-responsive" alt="Image">
-  </div>
-</div>
+
+
+
+
+    </ul>
+    <!-- END ITEM FILTERS -->
+    <div class="isotope-wrapper">
+      <div class="portfolio-isotope" style="position: relative; height: 1140px;">
+        <ul class="portfolio-3-cols">
+          <% @ms.each do |ms| %>
+              <li class="portfolio-item <%= ms.typ %>" style="position: absolute; left: 0px; top: 0px;">
+                <div class="portfolio-simple">
+                  <img src="<%= ms.image %>"  class="img-responsive" alt="Portfolio">
+                  <div class="info" style="height: 60px;">
+                    <h3 class="title"><%= ms.descr %></h3>
+                    <span></span>
+
+                  </div>
+                </div>
+              </li>
+          <%end%>
+        </ul>
+      </div>
+    </div>
 </div>
 </div>
 

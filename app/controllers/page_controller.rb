@@ -138,6 +138,7 @@ class PageController < ApplicationController
     @title = 'ОПТОВЫЕ ПОСТАВКИ АВТОМОБИЛЬНЫХ МАСЕЛ, ТОСОЛОВ И АНТИФРИЗОВ, АВТОХИМИИ И АВТОКОСМЕТИКИ  | Станция технического обслуживания и ремона автомобилей всех марок - ЗАО ПФ Автостар'
     @keywords = 'автомасла, автомастла оптом, в пятигорсек, автомобильные масла, автокосметика, оптом автохимия, цены, компания автостар пятигорск '
     @description = 'Оптовые поставки автомобильных масел, тосолов и антифризов, автохимии и автокосметики в пятигорске и КМВ'
+ @ms=Masla.all
   end
 
   def ladaparts
@@ -157,9 +158,15 @@ class PageController < ApplicationController
     @description = 'Оптовые поставки автомобильных масел, тосолов и антифризов, автохимии и автокосметики в пятигорске и КМВ'
   end
 
+  def avtodj
+    @title = 'МАГАЗИН АВТОЭЛЕКТРОНИКИ АВТОDJ  | Станция технического обслуживания и ремона автомобилей всех марок - ЗАО ПФ Автостар'
+    @keywords = 'автомасла, автомастла оптом, в пятигорсек, автомобильные масла, автокосметика, оптом автохимия, цены, компания автостар пятигорск '
+    @description = 'Оптовые поставки автомобильных масел, тосолов и антифризов, автохимии и автокосметики в пятигорске и КМВ'
+  end
+
   def contact
     @phone = params[:phone]
-
+    @message = params[:message]
 
     if session[:sms] == 'send'
       flash[:smssend]  = 'но Вы уже отправляли запрос'
@@ -172,7 +179,7 @@ class PageController < ApplicationController
 
     flash[:smssend]  = 'ожидайте звонка оператора.'
     session[:sms] = 'send'
-    UserMailer.activation(@phone).deliver_now
+    UserMailer.activation(@phone,@message).deliver_now
 
     redirect_to '/'
 

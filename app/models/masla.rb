@@ -1,0 +1,2 @@
+class Masla < ApplicationRecord
+end

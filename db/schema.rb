@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171029181837) do
+ActiveRecord::Schema.define(version: 20171030080610) do
 
   create_table "ladadetals", force: :cascade do |t|
     t.string  "typ"
@@ -18,6 +18,14 @@ ActiveRecord::Schema.define(version: 20171029181837) do
     t.string  "descr1", default: "В НАЛИЧИИ"
     t.integer "left",   default: 0
     t.integer "top",    default: 0
+    t.text    "image"
+  end
+
+  create_table "maslas", force: :cascade do |t|
+    t.string  "typ"
+    t.string  "brand"
+    t.string  "descr"
+    t.integer "cat_id"
     t.text    "image"
   end
 
