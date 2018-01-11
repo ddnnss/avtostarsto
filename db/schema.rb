@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171030080610) do
+ActiveRecord::Schema.define(version: 20171118192703) do
+
+  create_table "avtodjs", force: :cascade do |t|
+    t.string  "typ"
+    t.string  "brand"
+    t.string  "descr"
+    t.integer "cat_id"
+    t.text    "image"
+  end
 
   create_table "ladadetals", force: :cascade do |t|
     t.string  "typ"

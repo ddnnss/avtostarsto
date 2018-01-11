@@ -32,6 +32,7 @@ Rails.application.routes.draw do
    get '/diagnostika', to: 'page#diagnostika'
   get '/zona_priemki', to: 'page#zona_priemki'
   get '/kuzovnoi_tseh', to: 'page#kuzovnoi_tseh'
+  get '/avtostekla', to: 'page#remontstekol'
   get '/malyarnii_tseh', to: 'page#malyarnii_tseh'
   get '/himchistka_i_polirovka', to: 'page#himchistka_i_polirovka'
   get '/razval_shozhdenie', to: 'page#razval_shozhdenie'

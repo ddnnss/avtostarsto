@@ -1,0 +1,2 @@
+class Avtodj < ApplicationRecord
+end
