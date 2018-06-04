@@ -200,6 +200,9 @@ class PageController < ApplicationController
     UserMailer.activation(@phone,@message).deliver_now
 
     redirect_to '/'
+    else
+      flash[:smssend] = 'но Вы ввели не правильный ответ'
+      redirect_to '/'
     end
   end
 

@@ -72,12 +72,14 @@
                 <span class="input-group-btn"> <%= submit_tag 'Жду звонка' , class:'btn btn-primary btn-lg center-block'%></span>
                 </span>
               </div>
-              <div class="col-sm-6 modalmargin">
+              <div class="col-sm-6 ">
                 <%= image_tag(image_path('capthca/'+@n1.to_s+'.png'), class: 'capctha',alt:'')%>
                 <%= image_tag(image_path('capthca/plus.png'), class: 'capctha',alt:'')%>
                 <%= image_tag(image_path('capthca/'+@n2.to_s+'.png'), class: 'capctha',alt:'')%>
                 <%= image_tag(image_path('capthca/eqal.png'), class: 'capctha',alt:'')%>
                 <input  name="n3" required="required" placeholder="Ответ" type="number">
+                <input id="nn1" name="n1" value="<%= @n1%>" type="hidden" />
+                <input id="nn2" name="n2" value="<%= @n2%>" type="hidden" />
               </div>
               <div class="form-group">
                 <div class="col-sm-12">
