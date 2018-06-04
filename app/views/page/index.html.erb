@@ -6,6 +6,26 @@
       <div class="flexslider loading">
         <ul class="slides">
           <!-- SLIDE 1 -->
+          <li style="background:url(<%= asset_path('slide-5.jpg') %>) repeat; background-position:50% 0; background-size:cover;z-index: 0!important;">
+
+            <div class="container">
+
+              <div class="sixteen columns contain">
+                <h2 data-toptitle="36%" style="color: #FFFFFF;
+                    top: 39%;
+                    left: 0px;
+                    opacity: 1;
+                    font-size: 40px;">УСТАНОВКА ДОПОЛНИТЕЛЬНОГО ОБОРУДОВАНИЯ</h2>
+                <p data-bottomtext="20%" >БЫСТРО КАЧЕСТВЕННО ДОСТУПНО </p >
+
+               
+
+
+              </div>
+              <a class="btn btn-primary" href="/avtodj">Подробнее</a>
+            </div><!-- End Container -->
+
+          </li><!-- End item -->
           <li style="background:url(<%= asset_path('slide-1.jpg') %>) repeat; background-position:50% 0; background-size:cover;z-index: 0!important;">
 
             <div class="container">
@@ -141,6 +161,30 @@
       <h2 class="heading-border heading-thin border-primary">УСЛУГИ</h2>
     </div>
     <div class="row icon-info-center-group">
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('ohsis.jpg'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title"></h3>
+          <p></p>
+          <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#small-modal">Заказать</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('shum.jpg'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title"></h3>
+          <p></p>
+          <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#small-modal">Заказать</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-info icon-info-center">
+          <%= image_tag(image_path('zvuk.jpg'), class: 'homefeature', data: {'topimage' => '19%'} )%>
+          <h3 class="title"></h3>
+          <p></p>
+          <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#small-modal">Заказать</button>
+        </div>
+      </div>
       <div class="col-md-4">
         <div class="icon-info icon-info-center">
           <%= image_tag(image_path('remontdv.png'), class: 'homefeature', data: {'topimage' => '19%'} )%>
