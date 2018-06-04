@@ -1,6 +1,9 @@
 class PageController < ApplicationController
   def index
     @title = 'Станция технического обслуживания и ремона автомобилей всех марок - ЗАО ПФ Автостар | Главная'
+    if request.domain == 'autodj.ru'
+      redirect to '/avtodj'
+    end
   end
 
   def to_remont
@@ -177,7 +180,12 @@ class PageController < ApplicationController
   def contact
     @phone = params[:phone]
     @message = params[:message]
+    nn1=params.permit(:n1).to_h[:n1].to_i
+    nn2=params.permit(:n2).to_h[:n2].to_i
+    nn3=params.permit(:n3).to_h[:n3].to_i
+    nn4=nn1+nn2
 
+    if  nn3 == nn4
     if session[:sms] == 'send'
       flash[:smssend]  = 'но Вы уже отправляли запрос'
       redirect_to '/' and return
@@ -192,7 +200,7 @@ class PageController < ApplicationController
     UserMailer.activation(@phone,@message).deliver_now
 
     redirect_to '/'
-
+    end
   end
 
   def order
